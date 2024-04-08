@@ -13,11 +13,12 @@ footer {
     width: 70vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .footer_links li {
     /* background-color: yellow; */
-    margin: 6vh 0;
+    margin: 10vh 0;
 }
 
 .footer_links li a {
