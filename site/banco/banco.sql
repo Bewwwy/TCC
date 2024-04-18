@@ -5,7 +5,7 @@ CREATE TABLE tb_animal (
     nome_pet VARCHAR(30) NOT NULL,
     foto MEDIUMBLOB NOT NULL,
     idade INT(2) NOT NULL,
-    sexo BOOLEAN NOT NULL,
+    sexo ENUM('Masculino', 'Feminino') NOT NULL,
     descr VARCHAR(700) NOT NULL,
     status_pet BOOLEAN NOT NULL,
     PRIMARY KEY (ID_pet)
