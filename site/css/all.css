@@ -35,6 +35,5 @@ header {
     background-color: var(--l_grey);
     min-height: 78vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
