@@ -1,0 +1,31 @@
+section {
+    background-color: var(--white);
+    width: 80vw;
+    margin: 4vh 0;
+}
+
+article {
+    display: flex;
+}
+
+figure {
+    width: 40vw;
+}
+
+figure>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    background-color: rgb(250, 202, 202);
+    width: 40vw;
+}
+
+.row1 {
+    background-color: aliceblue;
+}
+
+.row2 {
+    background-color: bisque;
+}

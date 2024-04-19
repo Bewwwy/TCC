@@ -9,17 +9,16 @@ nav {
 
 .logo {
     height: 6vh;
-    margin: 0 2vw;
+    margin: .5vh 2vw;
     cursor: pointer;
 }
 
-
 .nav_links {
     /* background-color: yellow; */
-    height: 7vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding: 2.2vh 0 2.2vh 0;
     margin: 0 2vw;
 }
 
@@ -30,6 +29,7 @@ nav {
 
 .nav_links li a {
     color: black;
+    transition-duration: 0.5s;
 }
 
 .nav_links li a:hover {
