@@ -21,14 +21,14 @@
 
 header {
     background-color: var(--grey);
-    background-image: url("../images/gato_cachorro.jpg");
+    /* background-image: url("../images/gato_cachorro.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     background-position: center;
     color: white;
-    padding-top: 25vh;
-    padding-bottom: 30vh;
+    /* padding-top: 25vh;
+    padding-bottom: 30vh; */
 }
 
 .content {

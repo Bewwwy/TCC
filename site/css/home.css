@@ -12,6 +12,13 @@
     justify-content: space-around;
 }
 
+header {
+    background-image: url("../images/gato_cachorro.jpg");
+    padding-top: 25vh;
+    padding-bottom: 30vh;
+}
+
+
 article {
     display: flex;
 }
