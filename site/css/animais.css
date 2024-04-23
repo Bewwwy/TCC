@@ -3,3 +3,53 @@ header {
     padding-top: 18vh;
     padding-bottom: 18vh;
 }
+
+.a {
+    background-color: var(--white);
+    width: 80vw;
+    margin: 4vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.column {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: center;
+    margin: 1em;
+}
+
+.column>figure {
+    max-width: 25vw;
+    padding: 6vh 0 1vh;
+}
+
+.column>figure>img {
+    max-width: 100%;
+    height: auto;
+    transition-duration: 0.2s;
+}
+
+.column figure>img:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transition: 0.3s ease;
+}
+
+.column>h2 {
+    font-size: 1.4em;
+}
+
+.column h2:hover {
+    cursor: pointer;
+    color: rgb(68, 34, 146);
+    transition: 0.3s ease;
+}
+
+.column>p {
+    width: 20vw;
+    margin-bottom: 5vh
+}

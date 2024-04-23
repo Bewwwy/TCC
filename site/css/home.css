@@ -88,6 +88,7 @@ figure>img {
     flex-direction: column;
     width: 25vw;
     align-items: center;
+    margin: 1em;
 }
 
 .column>figure {
@@ -98,6 +99,22 @@ figure>img {
 .column>figure>img {
     max-width: 100%;
     height: auto;
+}
+
+.column figure>img:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transition: 0.3s ease;
+}
+
+.column>h2 {
+    font-size: 1.4em;
+}
+
+.column h2:hover {
+    cursor: pointer;
+    color: rgb(68, 34, 146);
+    transition: 0.3s ease;
 }
 
 .column>p {
