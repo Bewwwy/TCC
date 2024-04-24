@@ -1,17 +1,17 @@
-.text {
-    margin: 0.5em;
-    background-color: rgb(209, 209, 209);
-    width: 100vw;
-    padding: 1em;
+header {
+    background-image: url("../images/gato_1.jpg");
+    padding-top: 18vh;
+    padding-bottom: 18vh;
 }
 
 .banco {
-    display: flexbox;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     border-style: solid;
     margin-top: 3em;
-    text-align: center;
     align-items: center;
-    justify-content: center;
     height: 50vh;
     width: 30vw;
 }
@@ -22,8 +22,14 @@
     background-color: rgb(197, 197, 197);
 }
 
+.text {
+    padding-top: 5.5vh;
+    margin-bottom: 4vh;
+}
+
 .banco2 {
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     margin-top: 1em;
     text-align: center;
@@ -32,6 +38,6 @@
     width: 30vw;
 }
 
-img {
-    margin-top: 5em;
-}
+/* img {
+
+} */
