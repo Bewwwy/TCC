@@ -36,25 +36,25 @@ figure>img {
     flex-direction: column;
 }
 
-.row2> .text {
+.row2 .text {
     align-items: end;
 }
 
-.row1> .text>p {
+.row1 .text p {
     text-align: left;
     width: 35vw;
     padding-left: 2vw;
     line-height: 1.5;
 }
 
-.row1> .text>h2 {
+.row1 .text h2 {
     text-align: left;
     padding-left: 2vw;
     font-size: 2em;
     margin-bottom: 2vh;
 }
 
-.row2> .text>p {
+.row2 .text>p {
     width: 35vw;
     text-align: right;
     padding-right: 2vw;
@@ -65,18 +65,22 @@ figure>img {
     background-color: aliceblue;
 } */
 
-.row1>figure, .row2>figure {
+.row1 figure, .row2 figure {
     width: 40vw;
     padding: 6vh 0;
 }
 
-.row1>figure {
+.row1 figure img, .row2 figure img{
+    border-radius: 8px;
+}
+
+.row1 figure {
     display: flex;
     justify-content: end;
     padding-right: 2vw;
 }
 
-.row2>figure {
+.row2 figure {
     display: flex;
     justify-content: start;
     padding-left: 2vw;
@@ -93,23 +97,24 @@ figure>img {
     margin: 1em;
 }
 
-.column>figure {
+.column figure {
     max-width: 25vw;
     padding: 6vh 0 1vh;
 }
 
-.column>figure>img {
+.column figure img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-.column figure>img:hover {
+.column figure img:hover {
     cursor: pointer;
     opacity: 80%;
     transition: 0.3s ease;
 }
 
-.column>h2 {
+.column h2 {
     font-size: 1.4em;
 }
 
@@ -119,7 +124,7 @@ figure>img {
     transition: 0.3s ease;
 }
 
-.column>p {
+.column p {
     width: 20vw;
     margin-bottom: 5vh;
     line-height: 1.5;
