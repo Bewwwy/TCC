@@ -51,5 +51,6 @@ header {
 
 .column>p {
     width: 20vw;
-    margin-bottom: 5vh
+    margin-bottom: 5vh;
+    line-height: 1.5;
 }

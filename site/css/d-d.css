@@ -1,0 +1,32 @@
+header {
+    background-image: url("../images/pets.jpg");
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    width: 60vw;
+    margin: 4vh 0;
+    display: flex;
+    justify-content: center;
+    padding: 1vh 0 5vh;
+}
+
+article {
+    /* background-color: aliceblue; */
+    width: 52vw;
+}
+
+article h2 {
+    padding-top: 1.5em;
+    font-size: 1.4em;
+}
+
+.d li {
+    list-style: inside;
+    margin: 1.5em 0;
+    text-align: justify;
+    list-style-position: outside;
+    line-height: 1.5;
+}
