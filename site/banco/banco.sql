@@ -42,3 +42,17 @@ CREATE TABLE tb_forms (
     PRIMARY KEY (ID_form),
     FOREIGN KEY (ID_pet) REFERENCES tb_animal (ID_pet) ON DELETE RESTRICT
 );
+
+CREATE TABLE tb_msg (
+    ID_msg INT(3) NOT NULL AUTO_INCREMENT,
+    nome_completo VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    msg TEXT NOT NULL,
+    PRIMARY KEY (ID_msg)
+);
+
+INSERT INTO tb_adm (nome, user, senha) VALUES (
+    'abc',
+    'adm',
+    'pataseamigos'
+);
