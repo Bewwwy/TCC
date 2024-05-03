@@ -1,3 +1,8 @@
+<?php 
+require_once '../banco/c_adm_view.php';
+require_once '../banco/config_session.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,7 +11,8 @@
     <title>Cadastrar ADMs</title>
 </head>
 <body>
-    <form action="../banco/nadmhandler.php" method="post">
+    <h1>Cadastrar ADM</h1>
+    <form action="../banco/c_admhandler.php" method="post">
         <label for="nome">Nome</label>
         <input type="text" name="nome" id="">
         <label for="user">Usuário</label>
@@ -14,7 +20,11 @@
         <label for="senha">Senha</label>
         <input type="password" name="senha" placeholder="Senha">
         <button>Cadastrar</button>
-
     </form>
+    <?php
+
+    check_erros_cadastro();
+
+    ?>
 </body>
 </html>

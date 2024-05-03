@@ -51,8 +51,8 @@ CREATE TABLE tb_msg (
     PRIMARY KEY (ID_msg)
 );
 
-INSERT INTO tb_adm (nome, user, senha) VALUES (
-    'abc',
-    'adm',
-    'pataseamigos'
-);
+-- INSERT INTO tb_adm (nome, user, senha) VALUES (
+--     'abc',
+--     'adm',
+--     'pataseamigos'
+-- );
