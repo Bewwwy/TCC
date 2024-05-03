@@ -14,7 +14,7 @@ require_once '../banco/config_session.php';
     <h1>Cadastrar ADM</h1>
     <form action="../banco/c_admhandler.php" method="post">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="">
+        <input type="text" name="nome" id="" placeholder="Nome">
         <label for="user">Usuário</label>
         <input type="text" name="user" placeholder="Usuário">
         <label for="senha">Senha</label>
