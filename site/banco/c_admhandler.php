@@ -24,6 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($erros) {
             $_SESSION["erros_cadastro"] = $erros;
+
+            $signup_data = [
+                "nome" => $nome,
+                "user" => $user,
+            ];
+            $_SESSION["signup_data"] = $signup_data;
+
             header("Location: ../pages/c_adm.php");
             die();
         }

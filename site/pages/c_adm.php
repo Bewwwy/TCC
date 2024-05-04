@@ -1,6 +1,6 @@
 <?php 
-require_once '../banco/c_adm_view.php';
 require_once '../banco/config_session.php';
+require_once '../banco/c_adm_view.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,12 +13,16 @@ require_once '../banco/config_session.php';
 <body>
     <h1>Cadastrar ADM</h1>
     <form action="../banco/c_admhandler.php" method="post">
-        <label for="nome">Nome</label>
+        <!-- <label for="nome">Nome</label>
         <input type="text" name="nome" id="" placeholder="Nome">
         <label for="user">Usuário</label>
         <input type="text" name="user" placeholder="Usuário">
         <label for="senha">Senha</label>
-        <input type="password" name="senha" placeholder="Senha">
+        <input type="password" name="senha" placeholder="Senha"> -->
+
+        <?php 
+        input_cadastro();
+        ?>
         <button>Cadastrar</button>
     </form>
     <?php

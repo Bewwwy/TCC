@@ -2,6 +2,33 @@
 
 declare(strict_types=1);
 
+
+function input_cadastro() {
+    // <label for="nome">Nome</label>
+    // <input type="text" name="nome" id="" placeholder="Nome">
+    // <label for="user">Usuário</label>
+    // <input type="text" name="user" placeholder="Usuário">
+
+
+    if (isset($_SESSION["signup_data"]["nome"])) {
+        echo '<label for="nome">Nome</label>
+        <input type="text" name="nome" id="" placeholder="Nome" value="'. $_SESSION["signup_data"]["nome"] . '">';
+    } else {
+        echo '<label for="nome">Nome</label>
+        <input type="text" name="nome" id="" placeholder="Nome">';
+    }
+
+    if (isset($_SESSION["signup_data"]["user"]) && !isset($_SESSION["erros_cadastro"]["user_taken"])) {
+        echo '<label for="user">Usuário</label>
+        <input type="text" name="user" placeholder="Usuário" value="' . $_SESSION["signup_data"]["user"] .'">';
+    } else {
+        echo '<label for="user">Usuário</label>
+        <input type="text" name="user" placeholder="Usuário">';
+    }
+    echo '<label for="senha">Senha</label>
+    <input type="password" name="senha" placeholder="Senha">';
+}
+
 function check_erros_cadastro() {
     if (isset($_SESSION['erros_cadastro'])) {
         $erros = $_SESSION['erros_cadastro'];

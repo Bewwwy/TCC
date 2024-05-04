@@ -26,7 +26,7 @@ CREATE TABLE tb_adm (
     ID_adm INT(2) NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
     user VARCHAR(15) NOT NULL,
-    senha VARCHAR(15) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
     PRIMARY KEY (ID_adm, user)
 );
 
@@ -52,7 +52,9 @@ CREATE TABLE tb_msg (
 );
 
 -- INSERT INTO tb_adm (nome, user, senha) VALUES (
---     'abc',
 --     'adm',
---     'pataseamigos'
+--     'ADM',
+--     '$2y$12$QE/iAtRiMgdRt4pEi0M4Lu3UWThHOoN79Nh8LElzjFwE9L7bDXDsC'
 -- );
+
+-- ALTER TABLE tb_adm MODIFY COLUMN senha VARCHAR(255);

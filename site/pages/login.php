@@ -1,3 +1,9 @@
+<?php 
+require_once '../banco/config_session.php';
+require_once '../banco/l_view.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,5 +20,11 @@
         <input type="password" name="senha" placeholder="Senha">
         <button>Entrar</button>
     </form>
+
+    <?php
+
+    check_erros_login();
+
+    ?>
 </body>
 </html>

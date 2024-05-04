@@ -13,17 +13,48 @@ session_set_cookie_params([
 
 session_start();
 
-// session_regenerate_id(true);
-if (!isset($_SESSION['last_regeneration'])) {
 
-    regenerate_session_id();
+if (isset($_SESSION["user_id"])) {
+    if (!isset($_SESSION['last_regeneration'])) {
+
+        regenerate_session_id_logado();
+    } else {
+        $interval = 60 * 30;
+        
+        if (time() - $_SESSION['last_regeneration'] >= $interval) {
+
+            regenerate_session_id_logado();
+        }
+    }
 } else {
-    $interval = 60 * 30;
-    
-    if (time() - $_SESSION['last_regeneration'] >= $interval) {
+
+    // session_regenerate_id(true);
+    if (!isset($_SESSION['last_regeneration'])) {
 
         regenerate_session_id();
+    } else {
+        $interval = 60 * 30;
+        
+        if (time() - $_SESSION['last_regeneration'] >= $interval) {
+
+            regenerate_session_id();
+        }
     }
+
+
+}
+
+
+function regenerate_session_id_logado() {
+    session_regenerate_id(true);
+
+
+    $userID = $_SESSION["user_id"];
+    $novaSessaoID = session_create_id();
+    $sessaoID = $novaSessaoID . "_" . $userID;
+    session_id($sessaoID);
+
+    $_SESSION['last_regeneration'] = time();
 }
 
 function regenerate_session_id() {
