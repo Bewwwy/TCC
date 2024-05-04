@@ -14,16 +14,16 @@ function get_username(object $pdo, string $user) {
     return $result;
 }
 
-function get_email(object $pdo, string $email) {
-    $query = "SELECT user FROM tb_adm WHERE email = :email;";
+// function get_email(object $pdo, string $email) {
+//     $query = "SELECT user FROM tb_adm WHERE email = :email;";
 
-    $stmt = $pdo->prepare($query);
-    $stmt->bindParam(":email", $email);
-    $stmt->execute();
+//     $stmt = $pdo->prepare($query);
+//     $stmt->bindParam(":email", $email);
+//     $stmt->execute();
 
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $result;
-}
+//     $result = $stmt->fetch(PDO::FETCH_ASSOC);
+//     return $result;
+// }
 
 
 function set_user(object $pdo, string $nome, string $user, string $senha) {
