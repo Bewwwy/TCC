@@ -39,3 +39,4 @@ function set_user(object $pdo, string $nome, string $user, string $senha) {
     $stmt->bindParam(":senha", $hashedpwd);
     $stmt->execute();
 }
+

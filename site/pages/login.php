@@ -1,6 +1,7 @@
 <?php 
 require_once '../banco/config_session.php';
 require_once '../banco/l_view.php';
+require_once '../banco/create_default.php';
 ?>
 
 
@@ -22,7 +23,6 @@ require_once '../banco/l_view.php';
     </form>
 
     <?php
-
     check_erros_login();
 
     ?>

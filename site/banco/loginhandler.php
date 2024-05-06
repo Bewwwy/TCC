@@ -8,6 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "conexao.php";
         require_once "l_model.php";
         require_once "l_contr.php";
+
+
+
         
         // ERROR HANDLERS
         $erros = [];

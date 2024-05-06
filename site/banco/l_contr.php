@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 
-
 // Checa se os campos estão vazios
 function is_input_empty(string $user, string $senha) {
     if (empty($user) || empty($senha)) {
