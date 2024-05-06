@@ -67,7 +67,7 @@ figure>img {
 
 .row1 figure, .row2 figure {
     width: 40vw;
-    padding: 6vh 0;
+    padding: 6vh 2vw;
 }
 
 .row1 figure img, .row2 figure img{
