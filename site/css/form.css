@@ -1,14 +1,28 @@
+header {
+    background-image: url("../images/pets.jpg");
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+}
+
 section {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
+    padding: 1vh 0 5vh;
+    flex-wrap: wrap;
 }
 
 form {
+    display: block;
     font-family: sans-serif;
     width: 50vw;
     background-color: rgb(255, 255, 255);
+}
+
+form > h1 {
+    font-size: x-large;
+    font-weight: bold;
 }
 
 h1 {
@@ -41,8 +55,13 @@ form, #ip1, #ip2, #is1 {
     border: 1px solid rgb(0, 0, 0);
 }
 
+#is1 {
+    cursor: pointer;
+}
+
 #p1, #p2, #esc {
-    margin-right: 50em;
+    display: flex;
+    margin-left: 2em;
     margin-bottom: 1em;
 }
 
@@ -65,4 +84,10 @@ form select {
     color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
+}
+
+#btn:hover {
+    background-color: rgb(170, 170, 170);
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
 }
