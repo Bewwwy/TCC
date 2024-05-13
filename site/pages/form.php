@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/form.css">
-    <title>Formulário</title>
+    <title>Formulário de contato</title>
 </head>
 <body>
     <nav>
@@ -16,40 +16,26 @@
             <li><a href="../pages/animais.html">Animais</a></li>
             <li><a href="../pages/direitos_deveres.html">Direitos e deveres</a></li>
             <li><a href="../pages/doacao.html">Doações</a></li>
-            <li><a href="../form.html">Contato</a></li>
+            <li><a href="../form.php">Contato</a></li>
         </ul>
     </nav>
 
     <main class="content">
-        <section>
-            <form action="../banco/conexao.php" method="post">
-                <h1>Formulário de adoção</h1>
-                <div class="a">
-                    <label id="p1">Pergunta</label>
-                    <input type="text" name="p1" id="ip1">
-                </div>
+        <form action="" method="post">
+            <h1>Formulário de contato</h1>
 
-                <div class="b">
-                    <label id="p2">Pergunta</label>
-                    <input type="text" name="p2" id="ip2">
-                </div>
+            <label id="p1">Nome completo</label>
+            <input type="text" name="p1" id="ip1" placeholder="Nome completo...">
 
-                <div class="c">
-                    <label id="esc">Escolha</label>
-                    <select name="" id="is1"></select>
-                </div>
+            <label id="p2">E-mail</label>
+            <input type="email" name="p2" id="ip2" placeholder="E-mail...">
 
-                <div class="checkbox">
-                    <input type="checkbox" id="box">
-                    <label>Estou ciente dos deveres e critério de adoção</label>
-                </div>
-                
-                <div>
-                <input type="submit" value="Enviar" id="btn">
-                </div>
-                
-            </form>
-        </section>
+            <label id="p2">Deixe sua mensagem</label>
+            <textarea placeholder="Mensagem..." cols="30" rows="5" id="msg"></textarea>
+            <p id="result">0/700</p>
+
+            <input type="submit" value="Enviar" id="btn">
+        </form>
     </main>
 
     <footer>
@@ -62,5 +48,7 @@
             <li><a href="./login.php">Login</a></li>
         </ul>
     </footer>
+
+    <script src="../js/limit.js"></script>
 </body>
 </html>
