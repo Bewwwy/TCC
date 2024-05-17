@@ -136,9 +136,11 @@ textarea {
     text-align: left;
     padding: 1rem;
     max-width: 45vw;
+    max-height: 25vh;
     background-color: rgb(238, 238, 238);
     border-radius: 5px;
     border: 1.5px solid #b2b2b2;
+    text-align: justify;
 }
 
 p {
