@@ -16,7 +16,7 @@ require_once '../banco/create_default.php';
 <body>
     <div class="page">
         <h1>Fazer Login</h1>
-        <form class="forms" action="../banco/loginhandler.php" method="post">
+        <form action="../banco/loginhandler.php" method="post">
             <label for="user">Usuário</label>
             <input type="text" name="user" placeholder="Usuário">
             <label for="senha">Senha</label>

@@ -29,6 +29,9 @@ body {
     background-color: rgb(190, 137, 137);
     width: 20vw;
     height: 50vh;
+    width: fit-content;
+    height: fit-content;
+    padding: 4vh 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,26 +42,28 @@ body {
 
 h1 {
     font-size: xx-large;
+    margin-bottom: 1em;
 }
 
-.forms {
+form {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+label {
+    align-self: flex-start;
+    margin: 2vh 0 1vh;
     flex-direction: column;
 }
 
-.forms label {
-    align-self: flex-start;
-    margin: 3vh 0 3vh;
-}
-
-.forms input {
-    padding: 3rem;
+input {
+    padding: 1rem;
     text-align: left;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border: 1.5px solid #b2b2b2;
 }
-
 
 #btnadm {
     margin-top: 5vh;
