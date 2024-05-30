@@ -6,6 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sexo = $_POST["sexo"];
     $descr = $_POST["descr"];
 
+    $tam = strlen($descr);
+
     // Informações da foto
     $foto = $_FILES['foto'];
 
@@ -47,6 +49,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Checa se o tamanho da foto é muito grande
         if ($foto_size > 1000000) {
             $erros["foto_grande"] = "Sua foto é muito grande!";
+        }
+
+        if ($tam > 700) {
+            $erros["long_descr"] = "A descrição possui caracteres de mais!";
         }
 
         // Se há algum erro, armazena as informações fornecidas pelo forms na sessão e redireciona para a página de cadastro

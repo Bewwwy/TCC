@@ -45,17 +45,18 @@ function input_cadastro() {
 
     echo '<label for="sexo">Sexo</label>
     <select name="sexo" >
+    <option hidden value=""></option>
     <option value="Masculino">Masculino</option>
     <option value="Feminino">Feminino</option>
     </select>';
 
     if (isset($_SESSION["signup_data"]["descr"])) {
         echo '<label for="Descricao">Descrição</label>
-        <textarea name="descr" placeholder="Descrição..." cols="30" rows="5" id="msg" value="'. $_SESSION["signup_data"]["descr"].'"></textarea>
+        <input type="text" name="descr" placeholder="Descrição..." id="msg" value="'. $_SESSION["signup_data"]["descr"].'"></textarea>
         <p id="result">0/700</p>';
     } else {
         echo '<label for="Descricao">Descrição</label>
-        <textarea name="descr" placeholder="Descrição..." cols="30" rows="5" id="msg"></textarea>
+        <input type="text" name="descr" placeholder="Descrição..." id="msg"></textarea>
         <p id="result">0/700</p>';
     }
 }

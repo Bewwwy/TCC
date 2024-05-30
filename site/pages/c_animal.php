@@ -42,5 +42,6 @@ require_once '../banco/c_animal_view.php';
     check_erros_cadastro();
 
     ?>
+    <script src="../js/limit.js"></script>
 </body>
 </html>
