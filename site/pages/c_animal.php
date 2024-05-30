@@ -13,23 +13,33 @@ require_once '../banco/c_animal_view.php';
 <body>
     <h1>Cadastrar Animal</h1>
     <form action="../banco/c_animalhandler.php" method="post" enctype="multipart/form-data">
-        <label for="nome_pet">Nome do animal</label>
+        <!-- <label for="nome_pet">Nome do animal</label>
         <input type="text" name="nome_pet" placeholder="Nome do animal">
 
         <label for="foto">Foto</label>
-        <input type="file" name="foto">
+        <input type="file" name="foto" accept=".jpeg, .jpg, .png">
         
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" placeholder="Senha">
+        <label for="idade">Insira a idade do animal em anos*</label>
+        <input type="number" name="idade" placeholder="Idade em anos" min="0">
+        
+        <label for="sexo">Sexo</label>
+        <select name="sexo" >
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+        </select>
+
+        <label for="Descricao">Descrição</label>
+        <textarea name="descr" placeholder="Descrição..." cols="30" rows="5" id="msg"></textarea>
+        <p id="result">0/700</p> -->
 
         <?php 
-        // input_cadastro();
-        ?>
+        input_cadastro();
+        ?> 
         <button type="submit">Cadastrar</button>
     </form>
     <?php
 
-    // check_erros_cadastro();
+    check_erros_cadastro();
 
     ?>
 </body>
