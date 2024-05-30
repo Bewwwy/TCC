@@ -3,11 +3,11 @@ CREATE DATABASE TCC;
 CREATE TABLE tb_animal (
     ID_pet INT(3) NOT NULL AUTO_INCREMENT,
     nome_pet VARCHAR(30) NOT NULL,
-    foto MEDIUMBLOB NOT NULL,
+    foto VARCHAR(255) NOT NULL,
     idade INT(2) NOT NULL,
     sexo ENUM('Masculino', 'Feminino') NOT NULL,
     descr VARCHAR(700) NOT NULL,
-    status_pet BOOLEAN NOT NULL,
+    status_pet BOOLEAN,
     PRIMARY KEY (ID_pet)
 );
 

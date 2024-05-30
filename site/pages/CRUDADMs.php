@@ -40,7 +40,7 @@ require_once '../banco/conexao.php';
                     echo "<td>". $row['ID_adm'] . "</td>";
                     echo "<td>". $row['user'] . "</td>";
                     echo "<td>". $row['nome'] . "</td>";
-                    echo "<td><input type='password' value='XXXXXXXXXXXXXXX' disabled='disabled'></td>";
+                    echo "<td><p>****************</p></td>";
                     echo"</tr>"; 
                 }
             ?>

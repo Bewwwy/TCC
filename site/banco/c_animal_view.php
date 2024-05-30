@@ -39,8 +39,8 @@ function input_cadastro() {
         echo '<label for="idade">Insira a idade do animal em anos*</label>
         <input type="number" name="idade" placeholder="Idade em anos" min="0" value="'.$_SESSION["signup_data"]["idade"].'">';
     } else {
-        echo '<label for="idade">Insira a idade do animal em anos*</label>
-        <input type="number" name="idade" placeholder="Idade em anos" min="0" value="0">';
+        echo '<label for="idade">Insira a idade do animal em anos inteiros*</label>
+        <input type="number" name="idade" min="0" value="0">';
     }
 
     echo '<label for="sexo">Sexo</label>
