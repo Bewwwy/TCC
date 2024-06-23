@@ -8,13 +8,14 @@ require_once '../banco/conexao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/crudA.css">
     <title>CRUD Animais</title>
 </head>
 <body>
+    <div class="wawa">
 <h1>Gerenciar Animais</h1>
     <h2>Lista de Animais</h2>
-    <a href="./c_animal.php">Cadastrar novo animal</a>
-    <table>
+    <table class="table1">
         <thead>
             <tr>
                 <th>ID_pet</th>
@@ -23,8 +24,7 @@ require_once '../banco/conexao.php';
                 <th>Idade</th>
                 <th>Sexo</th>
                 <th>Descrição</th>
-                <th>Editar</th>
-                <th>Excluir</th>
+                <th>Ações</th>      
             </tr>
         </thead>
         <tbody>
@@ -51,5 +51,8 @@ require_once '../banco/conexao.php';
         </tbody>
 
     </table>
+    <a id="novo" href="./c_animal.php">Cadastrar novo animal</a>
+    <a id="voltar" href="../index.html">Voltar</a>
+    </div>
 </body>
 </html>
