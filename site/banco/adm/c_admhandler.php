@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST["senha"];
 
     try {
-        require_once "conexao.php";
+        require_once "../conexao.php";
         require_once "c_adm_model.php";
         require_once "c_adm_contr.php";
 
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $erros["user_taken"] = "Usuário já existente!";
         }
 
-        require_once "config_session.php";
+        require_once "../config_session.php";
 
         if ($erros) {
             $_SESSION["erros_cadastro"] = $erros;
@@ -31,13 +31,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ];
             $_SESSION["signup_data"] = $signup_data;
 
-            header("Location: ../pages/c_adm.php");
+            header("Location: ../../pages/c_adm.php");
             die();
         }
 
         create_user($pdo, $nome, $user, $senha);
 
-        header("Location: ../pages/c_adm.php?signup=success");
+        header("Location: ../../pages/c_adm.php?signup=success");
 
         $pdo = null;
         $stmt = null;
@@ -48,6 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Query failed: " . $e->getMessage());
     }
 } else {
-    header("Location: ../pages/c_adm.php");
+    header("Location: ../../pages/c_adm.php");
     die();
 }

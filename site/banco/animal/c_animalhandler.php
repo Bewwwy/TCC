@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $permitido = array('jpg', 'jpeg', 'png');
 
     try {
-        require_once "conexao.php";
+        require_once "../conexao.php";
         require_once "c_animal_model.php";
         require_once "c_animal_contr.php";
 
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Se há algum erro, armazena as informações fornecidas pelo forms na sessão e redireciona para a página de cadastro
-        require_once "config_session.php";
+        require_once "../config_session.php";
 
         if ($erros) {
             $_SESSION["erros_cadastro"] = $erros;
@@ -68,17 +68,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ];
             $_SESSION["signup_data"] = $signup_data;
 
-            header("Location: ../pages/c_animal.php");
+            header("Location: ../../pages/c_animal.php");
             die();
         }
 
         // Caso tudo esteja ok, move a foto e insere um animal
         $foto_novo_nome = uniqid('', true).".". $fotoActualExt;
-        $foto_destino = '../uploads/'. $foto_novo_nome;
+        $foto_destino = '../../uploads/'. $foto_novo_nome;
         move_uploaded_file($foto_tmpname, $foto_destino);
         create_pet($pdo, $nome_pet, $foto_novo_nome, $idade, $sexo, $descr);
 
-        header("Location: ../pages/c_animal.php?signup=success");
+        header("Location: ../../pages/c_animal.php?signup=success");
 
         $pdo = null;
         $stmt = null;
@@ -90,6 +90,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
 } else {
-    header("Location: ../pages/c_animal.php");
+    header("Location: ../../pages/c_animal.php");
     die();
 }

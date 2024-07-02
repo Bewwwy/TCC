@@ -1,6 +1,6 @@
 <?php 
 require_once '../banco/config_session.php';
-require_once '../banco/c_animal_view.php';
+require_once '../banco/animal/c_animal_view.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ require_once '../banco/c_animal_view.php';
 </head>
 <body>
     <h1>Cadastrar Animal</h1>
-    <form action="../banco/c_animalhandler.php" method="post" enctype="multipart/form-data">
+    <form action="../banco/animal/c_animalhandler.php" method="post" enctype="multipart/form-data">
         <!-- <label for="nome_pet">Nome do animal</label>
         <input type="text" name="nome_pet" placeholder="Nome do animal">
 

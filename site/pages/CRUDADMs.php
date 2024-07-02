@@ -27,6 +27,10 @@ require_once '../banco/conexao.php';
         </thead>
         <tbody>
             <?php
+                
+
+
+
                 $query = "SELECT * FROM tb_adm ORDER BY ID_adm;";
 
                 $stmt = $pdo->prepare($query);
@@ -41,6 +45,8 @@ require_once '../banco/conexao.php';
                     echo "<td>". $row['user'] . "</td>";
                     echo "<td>". $row['nome'] . "</td>";
                     echo "<td><p>****************</p></td>";
+                    echo "<td><a href='../banco/adm/update/update.php?id=". $row['ID_adm'] ."'>Editar</a></td>";
+                    echo "<td><button class='btnexc'>Excluir</button></td>";
                     echo"</tr>"; 
                 }
             ?>
