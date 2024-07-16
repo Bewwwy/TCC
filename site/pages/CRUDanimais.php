@@ -8,14 +8,14 @@ require_once '../banco/conexao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/crudA.css">
+    <link rel="stylesheet" href="../css/crudAnimal.css">
     <title>CRUD Animais</title>
 </head>
 <body>
     <div class="wawa">
-<h1>Gerenciar Animais</h1>
+    <h1>Gerenciar Animais</h1>
     <h2>Lista de Animais</h2>
-    <table class="table1">
+    <table class="tableAnimal">
         <thead>
             <tr>
                 <th>ID_pet</th>

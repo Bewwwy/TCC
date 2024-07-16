@@ -8,20 +8,21 @@ require_once '../banco/conexao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/crudAdm.css">
     <title>CRUD ADMs</title>
 </head>
 <body>
+    <div class="adm">
     <h1>Gerenciar ADMs</h1>
     <h2>Lista de ADMs</h2>
-    <a href="./c_adm.php">Cadastrar novo ADM</a>
-    <table>
+    <table class="tableADM">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
                 <th>User</th>
                 <th>Senha</th>
-                <th>Editar</th>
+                <th id="edit">Editar</th>
                 <th>Excluir</th>
             </tr>
         </thead>
@@ -53,6 +54,9 @@ require_once '../banco/conexao.php';
         </tbody>
 
     </table>
+    <a id="novo" href="./c_adm.php">Cadastrar novo ADM</a>
+    <a id="voltar" href="../index.html">Voltar</a>
+    </div>
     
 </body>
 </html>

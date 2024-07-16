@@ -55,7 +55,7 @@ a {
     color: rgb(0, 0, 0);
 }
 
-.table1 {
+.tableAnimal {
     border: 2em;
     margin: 25px 0;
     font-size: 0.9em;
@@ -64,18 +64,18 @@ a {
     border-collapse: collapse;
 }
 
-.table1 th {
+.tableAnimal th {
     border: 1px solid;
     padding: 12px 15px;
     font-weight: bold;
 }
 
-.table1 td {
+.tableAnimal td {
     padding: 12px 15px;
     border: 1px solid;
 }
 
-.table1 tbody tr {
+.tableAnimal tbody tr {
     border-bottom: 1px solid;
 }
 
@@ -94,6 +94,10 @@ a {
 }
 
 #voltar {
-    color: rgb(0, 0, 0);
     padding-top: 2em;
+}
+
+#voltar:hover {
+    color: rgb(255, 255, 255);
+    transition: ease 0.3s;
 }

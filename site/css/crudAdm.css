@@ -25,7 +25,7 @@ body {
     --l_grey: rgb(236, 236, 236);
 }
 
-.page {
+.adm {
     background-color: rgb(190, 137, 137);
     width: 30vw;
     height: 50vh;
@@ -42,45 +42,62 @@ body {
 
 h1 {
     font-size: xx-large;
-    margin: 1vh 1vh 1vh;
+    font-weight: bold;
+    padding-bottom: 1em;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-}
-
-label {
-    align-self: flex-start;
-    margin: 2vh 0 1vh;
-    flex-direction: column;
-}
-
-input {
-    padding: 1rem;
+h2 {
+    font-size: x-large;
     text-align: left;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    border: 1.5px solid #b2b2b2;
 }
 
-#btnadm {
-    padding: 0.5rem;
-    margin-top: 3vh;
-    text-align: center;
-    align-self: center;
-    width: 10vw;
-    height: 5vh;
-    background-color: rgb(134, 134, 134);
+a {
+    color: rgb(0, 0, 0);
+}
+
+.tableADM {
+    border: 2em;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.tableADM th {
+    border: 1px solid;
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+.tableADM td {
+    padding: 12px 15px;
+    border: 1px solid;
+}
+
+.tableADM tbody tr {
+    border-bottom: 1px solid;
+}
+
+#novo {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1em;
+    padding: 2vh 3vw;
+    text-decoration-color: black;
+    
+}
+
+#novo:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: ease 0.3s;
+}
+
+#voltar {
+    padding-top: 2em;
+}
+
+#voltar:hover {
     color: rgb(255, 255, 255);
-    border-radius: 5px;
-    cursor: pointer;
-    transition-duration: 0.3s;
-}
-
-#btnadm:hover{
-    background-color: rgb(170, 170, 170);
-    color: rgb(0,0,0);
-    transition: 0.3s ease;
+    transition: ease 0.3s;
 }
