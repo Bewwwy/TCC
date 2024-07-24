@@ -15,12 +15,18 @@ require_once '../banco/conexao.php';
     <div class="adm">
     <h1>Gerenciar ADMs</h1>
     <h2>Lista de ADMs</h2>
+<<<<<<< Updated upstream
     <table class="tableADM">
+=======
+    <a href="./c_adm.php">Cadastrar novo ADM</a>
+    <a href="login.php"><button>Voltar para a página de login</button></a>
+    <table>
+>>>>>>> Stashed changes
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>User</th>
+                <th>Usuário</th>
                 <th>Senha</th>
                 <th id="edit">Editar</th>
                 <th>Excluir</th>
@@ -28,10 +34,6 @@ require_once '../banco/conexao.php';
         </thead>
         <tbody>
             <?php
-                
-
-
-
                 $query = "SELECT * FROM tb_adm ORDER BY ID_adm;";
 
                 $stmt = $pdo->prepare($query);
@@ -43,8 +45,8 @@ require_once '../banco/conexao.php';
                 foreach($result as $row) {
                     echo "<tr>";
                     echo "<td>". $row['ID_adm'] . "</td>";
-                    echo "<td>". $row['user'] . "</td>";
                     echo "<td>". $row['nome'] . "</td>";
+                    echo "<td>". $row['user'] . "</td>";
                     echo "<td><p>****************</p></td>";
                     echo "<td><a href='../banco/adm/update/update.php?id=". $row['ID_adm'] ."'>Editar</a></td>";
                     echo "<td><button class='btnexc'>Excluir</button></td>";
