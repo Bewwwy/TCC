@@ -16,16 +16,13 @@ require_once '../banco/conexao.php';
     <h1>Gerenciar ADMs</h1>
     <h2>Lista de ADMs</h2>
     <table class="tableADM">
-    <a href="./c_adm.php">Cadastrar novo ADM</a>
-    <a href="login.php"><button>Voltar para a página de login</button></a>
-    <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Usuário</th>
                 <th>Senha</th>
-                <th id="edit">Editar</th>
+                <th>Editar</th>
                 <th>Excluir</th>
             </tr>
         </thead>
