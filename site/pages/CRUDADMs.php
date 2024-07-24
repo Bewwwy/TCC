@@ -15,13 +15,10 @@ require_once '../banco/conexao.php';
     <div class="adm">
     <h1>Gerenciar ADMs</h1>
     <h2>Lista de ADMs</h2>
-<<<<<<< Updated upstream
     <table class="tableADM">
-=======
     <a href="./c_adm.php">Cadastrar novo ADM</a>
     <a href="login.php"><button>Voltar para a página de login</button></a>
     <table>
->>>>>>> Stashed changes
         <thead>
             <tr>
                 <th>ID</th>
