@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // ERROR HANDLERS
         $erros = [];
 
-        // Se algum campo estiver vazio, gera um erro
         // Checa se algum input está vazio
+        // Se algum campo estiver vazio, gera um erro
         if (is_input_empty($nome_pet, $idade, $sexo, $descr)) {
             $erros["empty_input"] = "Preencha todos os campos!";
         }
@@ -51,6 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $erros["foto_grande"] = "Sua foto é muito grande!";
         }
 
+        // Checa se a descrição é muito grande
         if ($tam > 700) {
             $erros["long_descr"] = "A descrição possui caracteres de mais!";
         }

@@ -24,7 +24,8 @@ require_once '../banco/conexao.php';
                 <th>Idade</th>
                 <th>Sexo</th>
                 <th>Descrição</th>
-                <th>Ações</th>      
+                <th>Editar</th>
+                <th>Excluir</th>  
             </tr>
         </thead>
         <tbody>
@@ -45,6 +46,8 @@ require_once '../banco/conexao.php';
                     echo "<td>". $row['idade'] . "</td>";
                     echo "<td>". $row['sexo'] . "</td>";
                     echo "<td>". $row['descr'] . "</td>";
+                    echo "<td><a href='../banco/animal/update/update.php?id=". $row['ID_pet'] ."'>Editar</a></td>";
+                    echo "<td><a href='../banco/animal/delete/deletehandler.php?id=". $row['ID_pet'] ."'>Excluir</a></td>";
                     echo"</tr>"; 
                 }
             ?>
@@ -52,7 +55,7 @@ require_once '../banco/conexao.php';
 
     </table>
     <a id="novo" href="./c_animal.php">Cadastrar novo animal</a>
-    <a id="voltar" href="../index.html">Voltar</a>
+    <a id="voltar" href="adm.html">Voltar</a>
     </div>
 </body>
 </html>

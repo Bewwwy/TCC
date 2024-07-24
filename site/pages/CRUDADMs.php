@@ -43,7 +43,7 @@ require_once '../banco/conexao.php';
                     echo "<td>". $row['user'] . "</td>";
                     echo "<td><p>****************</p></td>";
                     echo "<td><a href='../banco/adm/update/update.php?id=". $row['ID_adm'] ."'>Editar</a></td>";
-                    echo "<td><button class='btnexc'>Excluir</button></td>";
+                    echo "<td><a href='../banco/adm/delete/deletehandler.php?id=". $row['ID_adm'] ."'>Excluir</a></td>";
                     echo"</tr>"; 
                 }
             ?>
@@ -51,8 +51,10 @@ require_once '../banco/conexao.php';
 
     </table>
     <a id="novo" href="./c_adm.php">Cadastrar novo ADM</a>
-    <a id="voltar" href="../index.html">Voltar</a>
+    <a id="voltar" href="adm.html">Voltar</a>
     </div>
+
+
     
 </body>
 </html>

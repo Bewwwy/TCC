@@ -14,7 +14,7 @@ require_once 'update_view.php';
 <body>
     <h1>Editar ADM</h1>
 
-    <a href="../../../pages/CRUDADMs.php"><button>Voltar à página de ADMs</button></a>
+    <a href="../../../pages/CRUDADMs.php">Voltar à página de ADMs</a>
 
     <form action="updatehandler.php" method="post">
     <?php
