@@ -47,7 +47,7 @@ CREATE TABLE tb_msg (
     ID_msg INT(3) NOT NULL AUTO_INCREMENT,
     nome_completo VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    msg TEXT NOT NULL,
+    msg VARCHAR(700) NOT NULL,
     PRIMARY KEY (ID_msg)
 );
 
