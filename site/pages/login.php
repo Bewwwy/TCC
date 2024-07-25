@@ -25,6 +25,8 @@ require_once '../banco/create_default.php';
         </form>
     </div>
 
+    <a href="../index.html">Voltar para à Home</a>
+
     <?php
     check_erros_login();
 

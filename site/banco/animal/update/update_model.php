@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-
-
 function set_pet(object $pdo, int $id, string $nome_pet, string $idade, string $sexo, string $descr) {
     $query = "UPDATE tb_animal SET nome_pet = :nome_pet, idade = :idade, sexo = :sexo, descr = :descr WHERE ID_pet = :id;";
 

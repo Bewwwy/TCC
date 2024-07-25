@@ -42,6 +42,8 @@ require_once '../banco/animal/c_animal_view.php';
     check_erros_cadastro();
 
     ?>
+
+    <a href="CRUDanimais.php">Voltar</a>
     <script src="../js/limit.js"></script>
 </body>
 </html>

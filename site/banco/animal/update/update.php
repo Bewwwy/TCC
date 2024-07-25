@@ -38,19 +38,22 @@ require_once 'update_view.php';
             echo "<label for'nome'>Nome do pet</label>";
             echo "<input type='text' name='nome_pet' value='". $row['nome_pet']."'>";
 
-            // foto
+            // mostra a foto
             echo "<label for'foto'>Foto</label>";
             ?>
                  <img src='../../../uploads/<?php echo $row['foto']?>'><?php
-            
+
+            // idade
             echo "<label for'idade'>Idade</label>";
             echo "<input type='text' name='idade' value='". $row['idade'] ."' >";
 
+            // sexo
             echo "<label for'sexo'>Sexo</label>";
             echo "<select name='sexo'>
             <option value='Masculino'>Masculino</option>
             <option value='Feminino'>Feminino</option></select>";
 
+            // descrição
             echo "<label for'Descricao'>Descrição</label>";
             echo "<textarea name='descr'>". $row['descr'] ."</textarea>";
             echo "<p id='result'>0/700</p>";
@@ -68,6 +71,12 @@ require_once 'update_view.php';
     check_erros_update();
 
     ?>
+
+    <div class="nova_foto">
+        <?php 
+            echo "<a href='./update_foto.php?id=". $_GET['id']  ."'>Mudar foto</a>";
+        ?>
+    </div>
 
     
 </body>
