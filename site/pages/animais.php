@@ -1,3 +1,9 @@
+<?php
+require_once '../banco/config_session.php';
+require_once '../banco/conexao.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,7 +19,7 @@
     <nav>
         <a href="../index.html"><img class="logo" src="../images/logo.svg" alt="logo"></a>
         <ul class="nav_links">
-            <li><a href="./animais.html">Animais</a></li>
+            <li><a href="./animais.php">Animais</a></li>
             <li><a href="./direitos_deveres.html">Direitos e deveres</a></li>
             <li><a href="../pages/doacao.html">Doações</a></li>
             <li><a href="../pages/form.php">Contato</a></li>
@@ -70,6 +76,30 @@
                     sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
                     vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
             </article>
+
+
+
+            <?php
+                $query = "SELECT * FROM tb_animal ORDER BY ID_pet;";
+
+                $stmt = $pdo->prepare($query);
+                $stmt->execute();
+                
+                $result = $stmt->fetchAll();
+                
+                
+                foreach($result as $row) {
+
+
+                    echo "<a href='informacoes_animal.php?id=". $row['ID_pet'] ."'>";
+                    ?>
+                    <article class="column">
+                    <figure><img src='../uploads/<?php echo $row['foto']?>' alt="gatos"></figure><?php
+                    echo "<h2>". $row['nome_pet']. "</h2>";
+                    echo "<p>". $row['descr']. "</p>";
+                    echo "</article></a>";
+                }
+            ?>
             
         </section>
     </main>

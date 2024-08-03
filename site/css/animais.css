@@ -6,20 +6,23 @@ header {
 
 .a {
     background-color: var(--white);
-    width: 80vw;
+    width: 100rem;
     margin: 4vh auto;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
+.a a {
+    margin: 1em;
+}
+
 .column {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     width: 25vw;
     align-items: center;
-    margin: 1em;
 }
 
 .column>figure {

@@ -30,7 +30,7 @@ require_once '../banco/conexao.php';
         </thead>
         <tbody>
         <?php
-                $query = "SELECT * FROM tb_animal    ORDER BY ID_pet;";
+                $query = "SELECT * FROM tb_animal ORDER BY ID_pet;";
 
                 $stmt = $pdo->prepare($query);
                 $stmt->execute();
