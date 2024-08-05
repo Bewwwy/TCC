@@ -44,7 +44,7 @@ $id = $_GET['id'];
             echo "<p>Idade em anos: ". $row['idade']. "</p>";
             echo "<p>Sexo: ". $row['sexo']. "</p>";
             echo "<p>". $row['descr']. "</p>";
-            echo "<a href=''>Quero adotar!</a>";
+            echo "<a href='form_adocao.php?id=". $id ."' target='_blank'>Quero adotar!</a>";
         }
 
     ?>

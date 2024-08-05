@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         update_pet($pdo, $id, $nome_pet, $idade, $sexo, $descr);
 
-        header("Location: update.php?update=success");
+        header("Location: update.php?update=success&id=" .$id);
 
         $pdo = null;
         $stmt = null;
