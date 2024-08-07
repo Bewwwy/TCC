@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--l_grey);
+}
+
+:root {
+    --l_grey: rgb(236, 236, 236);
+}
+
+.home {
+    background-color: rgb(190, 137, 137);
+    width: 30vw;
+    height: 50vh;
+    width: fit-content;
+    height: fit-content;
+    padding: 10vh 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+#genAdm {
+    border: 1px rgb(0, 0, 0) solid;
+    /*background-color: rgba(190, 190, 190, 0.425);*/
+    padding: 2vh 5vw;
+    margin: 1vh;
+    border-radius: 7px;
+    color: black;
+    font-size: medium;
+}
+
+#genAdm:hover {
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+#genAni {
+    border: 1px rgb(0, 0, 0) solid;
+    padding: 2vh 5vw;
+    margin: 1vh;
+    border-radius: 7px;
+    color: black;
+    font-size: medium;
+}
+
+#genAni:hover {
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+#mens {
+    border: 1px rgb(0, 0, 0) solid;
+    padding: 2vh 6vw;
+    margin: 1vh;
+    border-radius: 7px;
+    color: black;
+    font-size: medium;
+}
+
+#mens:hover {
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+#voltar {
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1vh 3vw;
+    margin-top: 2em;
+    color: white
+}
+
+#voltar:hover {
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.3s ease;
+}

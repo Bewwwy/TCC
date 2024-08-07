@@ -43,16 +43,18 @@ body {
 h1 {
     font-size: xx-large;
     font-weight: bold;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
 h2 {
     font-size: x-large;
     text-align: left;
+    margin-bottom: 1em;
 }
 
 a {
     color: rgb(0, 0, 0);
+    margin: 1vh 1vw;
 }
 
 .tableADM {
@@ -82,9 +84,8 @@ a {
 #novo {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 1em;
-    padding: 2vh 3vw;
-    text-decoration-color: black;
-    
+    padding: 1vh 1vw;
+    text-decoration-color: black;  
 }
 
 #novo:hover {
@@ -94,7 +95,7 @@ a {
 }
 
 #voltar {
-    padding-top: 2em;
+    color: black;
 }
 
 #voltar:hover {

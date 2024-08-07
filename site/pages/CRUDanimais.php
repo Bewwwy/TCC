@@ -15,6 +15,8 @@ require_once '../banco/conexao.php';
     <div class="wawa">
     <h1>Gerenciar Animais</h1>
     <h2>Lista de Animais</h2>
+    <a id="novo" href="./c_animal.php">Cadastrar novo animal</a>
+    <a id="voltar" href="adm.html">Voltar</a>
     <table class="tableAnimal">
         <thead>
             <tr>
@@ -54,8 +56,6 @@ require_once '../banco/conexao.php';
         </tbody>
 
     </table>
-    <a id="novo" href="./c_animal.php">Cadastrar novo animal</a>
-    <a id="voltar" href="adm.html">Voltar</a>
     </div>
 </body>
 </html>

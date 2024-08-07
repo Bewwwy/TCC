@@ -15,6 +15,8 @@ require_once '../banco/conexao.php';
     <div class="adm">
     <h1>Gerenciar ADMs</h1>
     <h2>Lista de ADMs</h2>
+    <a id="novo" href="./c_adm.php">Cadastrar novo ADM</a>
+    <a id="voltar" href="adm.html">Voltar</a>
     <table class="tableADM">
         <thead>
             <tr>
@@ -50,8 +52,6 @@ require_once '../banco/conexao.php';
         </tbody>
 
     </table>
-    <a id="novo" href="./c_adm.php">Cadastrar novo ADM</a>
-    <a id="voltar" href="adm.html">Voltar</a>
     </div>
 
 
