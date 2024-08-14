@@ -37,7 +37,7 @@ CREATE TABLE tb_forms (
     idade INT(3) NOT NULL,
     CPF VARCHAR(10) NOT NULL,
     CEP INT(8) NOT NULL,
-    email VARCHAR(50) NOT NULL,
+    email VARCHAR(80) NOT NULL,
     numero VARCHAR(15) NOT NULL,
     PRIMARY KEY (ID_form),
     FOREIGN KEY (ID_pet) REFERENCES tb_animal (ID_pet) ON DELETE RESTRICT
@@ -46,7 +46,7 @@ CREATE TABLE tb_forms (
 CREATE TABLE tb_msg (
     ID_msg INT(3) NOT NULL AUTO_INCREMENT,
     nome_completo VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
+    email VARCHAR(80) NOT NULL,
     msg VARCHAR(700) NOT NULL,
     PRIMARY KEY (ID_msg)
 );

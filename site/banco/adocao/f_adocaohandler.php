@@ -4,7 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $email = $_POST["email"];
 
-    $idade = (int) preg_replace('/[^0-9]/', '', $_POST["idade"]);
+    // $idade = (int) preg_replace('/[^0-9]/', '', $_POST["idade"]);
+    $idade = date('Y-m-d', strtotime($_POST["idade"]));
 
     $cpf = (int) preg_replace('/[^0-9]/', '', $_POST["cpf"]);
     $cep = (int) preg_replace('/[^0-9]/', '', $_POST["cep"]);
@@ -20,9 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // ERROR HANDLERS
         $erros = [];
 
-        if (is_input_empty($nome, $idade, $email, $numero, $cpf, $cep, $check)) {
+        if (is_input_empty($nome, $email, $idade, $cpf, $cep, $numero, $check)) {
             $erros["empty_input"] = "Preencha todos os campos!";
-            $erros["nsei"] = $idade .", ". $numero .", ". $cpf .", ". $cep ;
+            $erros["nsei"] = $idade .", ". $numero .", ". $cpf .", ". $check ;
         }
 
         require_once "../config_session.php";

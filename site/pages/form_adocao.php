@@ -28,10 +28,10 @@ $id = $_GET['id']
         <input type="text" name="nome" id="ip1" placeholder="Nome completo...">
         <p>&#40;Máximo de 50 caracteres&#41;</p>
 
-        <label id="p1">Idade</label>
-        <input type="number" name="idade" id="ip2" placeholder="Idade...">
+        <label id="p1">Data de nascimento</label>
+        <input type="date" name="idade" id="ip2" placeholder="Idade...">
 
-        <label id="p2">E-mail</label>
+        <label id="p2">E-mail para contato</label>
         <input type="email" name="email" id="ip3" placeholder="E-mail...">
 
         <label id="p2">Número de telefone para contato</label>
@@ -44,7 +44,7 @@ $id = $_GET['id']
         <input type="text" name="cep" id="ip6" onkeypress="$(this).mask('00.000-000')" placeholder="_____-__">
 
         <input type="checkbox" name="check" id="ip7" required>
-        <label id="p2">Li e concordo sla o q</label>
+        <label id="p2">Li e concordo com os termos de responsabilidade adotiva</label>
 
         <input type="submit" value="Enviar" id="btn">
 
