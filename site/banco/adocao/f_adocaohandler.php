@@ -7,9 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // $idade = (int) preg_replace('/[^0-9]/', '', $_POST["idade"]);
     $idade = date('Y-m-d', strtotime($_POST["idade"]));
 
-    $cpf = (int) preg_replace('/[^0-9]/', '', $_POST["cpf"]);
-    $cep = (int) preg_replace('/[^0-9]/', '', $_POST["cep"]);
-    $numero = (int) preg_replace('/[^0-9]/', '', $_POST["numero"]);
+    // $numero = (int) preg_replace('/[^0-9]/', '', $_POST["numero"]);
+    // $cpf = (int) preg_replace('/[^0-9]/', '', $_POST["cpf"]);
+    // $cep = (int) preg_replace('/[^0-9]/', '', $_POST["cep"]);
+    $numero = $_POST["numero"];
+    $cpf = $_POST["cpf"];
+    $cep = $_POST["cep"];
+
 
     $check = $_POST["check"];
 
@@ -23,7 +27,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (is_input_empty($nome, $email, $idade, $cpf, $cep, $numero, $check)) {
             $erros["empty_input"] = "Preencha todos os campos!";
-            $erros["nsei"] = $idade .", ". $numero .", ". $cpf .", ". $check ;
+            $erros["nsei"] = $idade .", ". $numero .", ". $cpf .", ". $cep .", ". $check ;
+        }
+        if (strlen($nome) > 50) {
+            $erros["long_name"] = "Nome muito longo!";
+        }
+        if (strlen($email) > 80) {
+            $erros["long_email"] = "Email muito longo!";
+        }
+        if ((strlen($numero) > 15) or strlen($numero) < 14) {
+            $erros["invalid_tel"] = "Número de telefone inválido!";
+        }
+        if (strlen($cpf) != 14) {
+            $erros["invalid_cpf"] = "CPF inválido!";
+        }
+        if (strlen($cep) != 10) {
+            $erros["invalid_cep"] = "CEP inválido!";
         }
 
         require_once "../config_session.php";
@@ -31,12 +50,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($erros) {
             $_SESSION["erros_formulario"] = $erros;
 
+            $data = [
+                "nome" => $nome,
+                "email" => $email,
+                "idade" => $idade,
+                "numero" => $numero,
+                "cpf" => $cpf,
+                "cep" => $cep
+            ];
+            $_SESSION["data"] = $data;
 
             header("Location: ../../pages/form_adocao.php?id=". $id);
             die();
         }
 
-        // create_user($pdo, $nome, $user, $senha);
+        send_form($pdo, $id, $nome, $idade, $email, $numero, $cpf, $cep);
 
         header("Location: ../../pages/form_adocao.php?send=success&id=". $id);
 

@@ -30,17 +30,17 @@ CREATE TABLE tb_adm (
     PRIMARY KEY (ID_adm, user)
 );
 
-CREATE TABLE tb_forms (
+CREATE TABLE tb_f_adocao (
     ID_pet INT(3),
-    ID_form INT(4) NOT NULL AUTO_INCREMENT,
+    ID_form INT(5) NOT NULL AUTO_INCREMENT,
     nome_completo VARCHAR(50) NOT NULL,
-    idade INT(3) NOT NULL,
-    CPF VARCHAR(10) NOT NULL,
-    CEP INT(8) NOT NULL,
+    idade DATE NOT NULL,
+    CPF VARCHAR(14) NOT NULL,
+    CEP VARCHAR(10) NOT NULL,
     email VARCHAR(80) NOT NULL,
     numero VARCHAR(15) NOT NULL,
     PRIMARY KEY (ID_form),
-    FOREIGN KEY (ID_pet) REFERENCES tb_animal (ID_pet) ON DELETE RESTRICT
+    FOREIGN KEY (ID_pet) REFERENCES tb_animal(ID_pet) ON DELETE CASCADE
 );
 
 CREATE TABLE tb_msg (
