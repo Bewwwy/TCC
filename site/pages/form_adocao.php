@@ -1,12 +1,13 @@
-<?php 
+<?php
 require_once '../banco/config_session.php';
 require_once '../banco/adocao/f_view.php';
-$id = $_GET['id']
+
 
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +17,17 @@ $id = $_GET['id']
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/adocao.css">
     <title>Formulário de adoção</title>
 </head>
-<body>
-    <form action="../banco/adocao/f_adocaohandler.php" method="post">
-        <h1>Formulário de adoção</h1>
 
-        <input type='hidden' name='ID_pet' value='<?php echo $id; ?>'>
-        <!-- 
+<body>
+    <section class="container">
+        <form action="../banco/adocao/f_adocaohandler.php" method="post">
+            <h1>Formulário de adoção</h1>
+
+            <input type='hidden' name='ID_pet' value='<?php echo $id; ?>'>
+            <!-- 
         <label for="nome" id="p1">Nome completo</label>
         <input type="text" name="nome" id="ip1" maxlength="50" placeholder="Nome completo...">
 
@@ -36,7 +40,7 @@ $id = $_GET['id']
 
         <label id="p2">Número de telefone para contato</label>
         <input type="tel" name="numero" id="ip4" onkeypress="$(this).mask('(00) 00000-0000')" placeholder="Telefone...">
-
+        
         <label id="p2">CPF</label>
         <input type="text" name="cpf" id="ip5" onkeypress="$(this).mask('000.000.000-00');" placeholder="___.___.___-__">
 
@@ -45,12 +49,13 @@ $id = $_GET['id']
 
         <input type="checkbox" name="check" id="ip7" required>
         <label id="p2">Li e concordo com os termos de responsabilidade adotiva</label> -->
-        <?php
-        input_form();
-        ?>
-        <input type="submit" value="Enviar" id="btn">
+            <?php
+            input_form();
+            ?>
+            <input type="submit" value="Enviar" id="btn">
 
-    </form>
+        </form>
+    </section>
 
     <?php
 
@@ -58,6 +63,7 @@ $id = $_GET['id']
 
     ?>
 
-    
+
 </body>
+
 </html>

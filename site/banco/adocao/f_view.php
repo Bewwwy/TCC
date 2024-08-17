@@ -62,6 +62,7 @@ function input_form() {
         <label id="p5">CPF</label>
         <input type="text" name="cpf" id="ip5" onkeypress="$(this).mask('000.000.000-00');" <?php echo 'value="'. $_SESSION["data"]["cpf"] .'"'; ?>>
     <?php } else { ?>
+        <div class="column">
         <label id="p5">CPF</label>
         <input type="text" name="cpf" id="ip5" onkeypress="$(this).mask('000.000.000-00');" placeholder="___.___.___-__">
     <?php }
@@ -72,9 +73,12 @@ function input_form() {
     <?php } else { ?>
         <label id="p6">CEP</label>
         <input type="text" name="cep" id="ip6" onkeypress="$(this).mask('00.000-000');" placeholder="__.___-___">
+        </div>
     <?php }
-    echo '<input type="checkbox" name="check" id="ip7" required>
-    <label id="p7">Li e concordo com os termos de responsabilidade adotiva</label>';
+    echo '<div class="checkbox">
+    <input type="checkbox" name="check" id="ip7" required>
+    <label id="p7">Li e concordo com os termos de responsabilidade adotiva</label>
+    </div>';
 
 }
 

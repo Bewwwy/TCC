@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--l_grey);
+    background-color: rgb(190, 137, 137);
 }
 
 :root {
@@ -26,12 +26,12 @@ body {
 }
 
 .home {
-    background-color: rgb(190, 137, 137);
-    width: 30vw;
-    height: 50vh;
-    /* width: fit-content;
-    height: fit-content; */
-    padding: 10vh 12vw;
+    background-color: var(--l_grey);
+    width: 10vw;
+    height: 30vh;
+    width: fit-content;
+    height: fit-content;
+    padding: 5vh 8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,6 @@ h1 {
 
 #genAdm {
     border: 1px rgb(0, 0, 0) solid;
-    background-color: rgba(190, 190, 190, 0.425);
     width: 20rem;
     padding: 2vh 5vw;
     margin: 1vh;

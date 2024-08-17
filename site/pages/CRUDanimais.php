@@ -12,7 +12,7 @@ require_once '../banco/conexao.php';
     <title>CRUD Animais</title>
 </head>
 <body>
-    <div class="wawa">
+    <div class="tani">
     <h1>Gerenciar Animais</h1>
     <h2>Lista de Animais</h2>
     <a id="novo" href="./c_animal.php">Cadastrar novo animal</a>
