@@ -1,3 +1,8 @@
+<?php
+require_once "../banco/msg/msg_view.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,23 +26,32 @@
     </nav>
 
     <main class="content">
-        <form action="" method="post">
+        <form action="../banco/msg/msghandler.php" method="post">
             <h1>Formulário de contato</h1>
 
-            <label id="p1">Nome completo</label>
-            <input type="text" name="p1" id="ip1" placeholder="Nome completo...">
+            <!-- <label id="p1">Nome completo</label>
+            <input type="text" name="nome" id="ip1" placeholder="Nome completo...">
 
             <label id="p2">E-mail</label>
-            <input type="email" name="p2" id="ip2" placeholder="E-mail...">
+            <input type="email" name="email" id="ip2" placeholder="E-mail...">
 
             <label id="p2">Deixe sua mensagem</label>
-            <textarea placeholder="Mensagem..." cols="30" rows="5" id="msg"></textarea>
-            <p id="result">0/700</p>
+            <textarea name="mensagem" placeholder="Mensagem..." cols="30" rows="5" id="msg"></textarea>
+            <p id="result">0/700</p> -->
+            <?php
+            input_msg();
+
+            ?>
 
             <input type="submit" value="Enviar" id="btn">
         </form>
+        
     </main>
+    <?php
 
+    check_erros_msg();
+
+    ?>
     <footer>
         <ul class="footer_links">
             <li><a href="">Nome/logo</a></li>
