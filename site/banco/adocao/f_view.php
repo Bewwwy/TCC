@@ -26,6 +26,7 @@ function input_form() {
     // <input type="checkbox" name="check" id="ip7" required>
     // <label id="p2">Li e concordo com os termos de responsabilidade adotiva</label>
 
+    echo '<input type="hidden" name="ID_pet" value="'. $_GET['id'] .'">';
     if (isset($_SESSION["data"]["nome"])) {
         echo '<label for="nome" id="p1">Nome completo</label>
         <input type="text" name="nome" id="ip1" maxlength="50" value="'. $_SESSION["data"]["nome"] .'" >';
@@ -79,6 +80,8 @@ function input_form() {
     <input type="checkbox" name="check" id="ip7" required>
     <label id="p7">Li e concordo com os termos de responsabilidade adotiva</label>
     </div>';
+
+    $_SESSION["data"] = null;
 
 }
 

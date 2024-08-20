@@ -27,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (is_input_empty($nome, $email, $idade, $cpf, $cep, $numero, $check)) {
             $erros["empty_input"] = "Preencha todos os campos!";
-            $erros["nsei"] = $idade .", ". $numero .", ". $cpf .", ". $cep .", ". $check ;
         }
         if (strlen($nome) > 50) {
             $erros["long_name"] = "Nome muito longo!";
@@ -51,6 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["erros_formulario"] = $erros;
 
             $data = [
+                "id" => $id,
                 "nome" => $nome,
                 "email" => $email,
                 "idade" => $idade,

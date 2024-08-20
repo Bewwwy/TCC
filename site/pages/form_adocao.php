@@ -1,7 +1,7 @@
 <?php
 require_once '../banco/config_session.php';
 require_once '../banco/adocao/f_view.php';
-
+$id = $_GET['id'];
 
 ?>
 
@@ -26,7 +26,6 @@ require_once '../banco/adocao/f_view.php';
         <form action="../banco/adocao/f_adocaohandler.php" method="post">
             <h1>Formulário de adoção</h1>
 
-            <input type='hidden' name='ID_pet' value='<?php echo $id; ?>'>
             <!-- 
         <label for="nome" id="p1">Nome completo</label>
         <input type="text" name="nome" id="ip1" maxlength="50" placeholder="Nome completo...">
