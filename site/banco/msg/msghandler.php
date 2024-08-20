@@ -1,5 +1,7 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $msg = $_POST["msg"];
@@ -8,7 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "../conexao.php";
         require_once "msg_model.php";
         require_once "msg_contr.php";
-        
+
+
         // ERROR HANDLERS
         $erros = [];
 
@@ -28,14 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "../config_session.php";
 
         if ($erros) {
-            $_SESSION["erros_msg"] = $erros;
+            $_SESSION['erros_mensagem'] = $erros;
 
             $msg_data = [
                 "nome" => $nome,
                 "email" => $email,
-                "msg" => $msg
+                "msg" => $msg,
             ];
             $_SESSION["msg_data"] = $msg_data;
+
 
             header("Location: ../../pages/form.php");
             die();

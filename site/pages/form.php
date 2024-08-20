@@ -1,5 +1,6 @@
 <?php
-require_once "../banco/msg/msg_view.php";
+require_once '../banco/config_session.php';
+require_once '../banco/msg/msg_view.php';
 
 ?>
 
@@ -21,37 +22,38 @@ require_once "../banco/msg/msg_view.php";
             <li><a href="../pages/animais.php">Animais</a></li>
             <li><a href="../pages/direitos_deveres.html">Direitos e deveres</a></li>
             <li><a href="../pages/doacao.html">Doações</a></li>
-            <li><a href="../form.php">Contato</a></li>
+            <li><a href="../pages/form.php">Contato</a></li>
         </ul>
     </nav>
 
     <main class="content">
         <form action="../banco/msg/msghandler.php" method="post">
             <h1>Formulário de contato</h1>
-
-            <!-- <label id="p1">Nome completo</label>
+<!-- 
+            <label id="p1">Nome completo</label>
             <input type="text" name="nome" id="ip1" placeholder="Nome completo...">
 
             <label id="p2">E-mail</label>
             <input type="email" name="email" id="ip2" placeholder="E-mail...">
 
             <label id="p2">Deixe sua mensagem</label>
-            <textarea name="mensagem" placeholder="Mensagem..." cols="30" rows="5" id="msg"></textarea>
+            <textarea name="msg" placeholder="Mensagem..." cols="30" rows="5" id="msg"></textarea>
             <p id="result">0/700</p> -->
             <?php
             input_msg();
 
             ?>
 
+
             <input type="submit" value="Enviar" id="btn">
         </form>
+
         
+        <?php
+        check_erros();
+        ?>
     </main>
-    <?php
-
-    check_erros_msg();
-
-    ?>
+    
     <footer>
         <ul class="footer_links">
             <li><a href="">Nome/logo</a></li>

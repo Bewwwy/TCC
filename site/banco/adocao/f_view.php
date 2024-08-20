@@ -81,7 +81,7 @@ function input_form() {
     <label id="p7">Li e concordo com os termos de responsabilidade adotiva</label>
     </div>';
 
-    unset($_SESSION["data"]);
+    $_SESSION["data"] = null;
 
 }
 

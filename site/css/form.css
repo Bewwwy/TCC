@@ -147,9 +147,9 @@ textarea {
     text-align: justify;
 }
 
-p {
-    /* align-self: flex-end; */
-    /* margin-top: .8vh; */
+#result {
+    align-self: flex-end;
+    margin-top: .8vh;
     color: #5a5a5a;
 }
 
