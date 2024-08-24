@@ -16,15 +16,10 @@ require_once '../banco/conexao.php';
     <title>Animais</title>
 </head>
 <body>
-    <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.svg" alt="logo"></a>
-        <ul class="nav_links">
-            <li><a href="./animais.php">Animais</a></li>
-            <li><a href="./direitos_deveres.html">Direitos e deveres</a></li>
-            <li><a href="../pages/doacao.html">Doações</a></li>
-            <li><a href="../pages/form.php">Contato</a></li>
-        </ul>
-    </nav>
+
+    <?php
+    require '../componentes/navbar.php';
+    ?>
 
     <header>
         <h1>Título da página animais</h1>
@@ -37,45 +32,6 @@ require_once '../banco/conexao.php';
 
     <main class="content">
         <section class="a">
-            <article class="column">
-                <figure><img src="../images/gatos.jpg" alt="gatos"></figure>
-                <h2>Gatinho 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
-
-            <article class="column">
-                <figure><img src="../images/gatos.jpg" alt="gatos"></figure>
-                <h2>Gatinho 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
-
-            <article class="column">
-                <figure><img src="../images/gatos.jpg" alt="gatos"></figure>
-                <h2>Gatinho 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
-
-            <article class="column">
-                <figure><img src="../images/gatos.jpg" alt="gatos"></figure>
-                <h2>Gatinho 4</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
-
-            <article class="column">
-                <figure><img src="../images/gatos.jpg" alt="gatos"></figure>
-                <h2>Gatinho 5</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
 
 
 
@@ -90,30 +46,23 @@ require_once '../banco/conexao.php';
                 
                 foreach($result as $row) {
 
-
+                    echo '<div class="animal">';
                     echo "<a href='informacoes_animal.php?id=". $row['ID_pet'] ."'>";
                     ?>
-                    <article class="column">
-                    <figure><img src='../uploads/<?php echo $row['foto']?>' alt="gatos"></figure><?php
+                    
+                    <figure><img src='../uploads/<?php echo $row['foto']?>' alt="animal"></figure><?php
                     echo "<h2>". $row['nome_pet']. "</h2>";
                     echo "<p>". $row['descr']. "</p>";
-                    echo "</article></a>";
+                    echo "</a></div>";
                 }
             ?>
             
         </section>
     </main>
 
-    <footer>
-        <ul class="footer_links">
-            <li><a href="">Nome/logo</a></li>
-            <li><a href="">Animais</a></li>
-            <li><a href="">Direitos e deveres</a></li>
-            <li><a href="">Doações</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="./login.php">Login</a></li>
-        </ul>
-    </footer>
+    <?php
+    require '../componentes/footer.php';
+    ?>
 </body>
 
 </html>

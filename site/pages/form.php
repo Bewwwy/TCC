@@ -16,15 +16,9 @@ require_once '../banco/msg/msg_view.php';
     <title>Formulário de contato</title>
 </head>
 <body>
-    <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.svg" alt="logo"></a>
-        <ul class="nav_links">
-            <li><a href="../pages/animais.php">Animais</a></li>
-            <li><a href="../pages/direitos_deveres.html">Direitos e deveres</a></li>
-            <li><a href="../pages/doacao.html">Doações</a></li>
-            <li><a href="../pages/form.php">Contato</a></li>
-        </ul>
-    </nav>
+    <?php
+    require '../componentes/navbar.php';
+    ?>
 
     <main class="content">
         <form action="../banco/msg/msghandler.php" method="post">
@@ -54,16 +48,9 @@ require_once '../banco/msg/msg_view.php';
         ?>
     </main>
     
-    <footer>
-        <ul class="footer_links">
-            <li><a href="">Nome/logo</a></li>
-            <li><a href="">Animais</a></li>
-            <li><a href="">Direitos e deveres</a></li>
-            <li><a href="">Doações</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="./login.php">Login</a></li>
-        </ul>
-    </footer>
+    <?php
+    require '../componentes/footer.php';
+    ?>
 
     <script src="../js/limit.js"></script>
 </body>

@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: inherit;
+    font-family: "Lato", sans-serif;
 }
 
 body {
@@ -62,8 +63,8 @@ input:focus {
 }
 
 form .checkbox #ip7 {
-    height: 10px;
-    width: 30px;
+    height: 1rem;
+    width: 1rem;
     margin-top: 2em;
     cursor: pointer;
 }

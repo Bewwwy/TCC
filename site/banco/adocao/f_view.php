@@ -37,15 +37,15 @@ function input_form() {
 
     if (isset($_SESSION["data"]["idade"])) {
         echo '<label id="p2">Data de nascimento</label>
-        <input type="date" name="idade" id="ip2" value="'. $_SESSION["data"]["idade"] .'">';
+        <input type="date" name="idade" id="ip2" placeholder="Data de nascimento..." value="'. $_SESSION["data"]["idade"] .'">';
     } else {
         echo '<label id="p2">Data de nascimento</label>
-        <input type="date" name="idade" id="ip2" placeholder="Idade...">';
+        <input type="date" name="idade" id="ip2" placeholder="Data de nascimento...">';
     }
 
     if (isset($_SESSION["data"]["email"])) {
         echo '<label id="p3">E-mail para contato</label>
-        <input type="email" name="email" id="ip3" maxlength="80" value="'. $_SESSION["data"]["email"] .'">';
+        <input type="email" name="email" id="ip3" maxlength="80" placeholder="E-mail..." value="'. $_SESSION["data"]["email"] .'">';
     } else {
         echo '<label id="p3">E-mail para contato</label>
         <input type="email" name="email" id="ip3" maxlength="80" placeholder="E-mail...">';
@@ -53,15 +53,16 @@ function input_form() {
 
     if (isset($_SESSION["data"]["numero"])) { ?>
         <label id="p4">Número de telefone para contato</label>
-        <input type="tel" name="numero" id="ip4" onkeypress="$(this).mask('(00) 00000-0000')" <?php echo 'value="'. $_SESSION["data"]["numero"] .'"'; ?>>
+        <input type="tel" name="numero" id="ip4" onkeypress="$(this).mask('(00) 00000-0000')" placeholder="(__) _____-____" <?php echo 'value="'. $_SESSION["data"]["numero"] .'"'; ?>>
     <?php } else { ?>
         <label id="p4">Número de telefone para contato</label>
         <input type="tel" name="numero" id="ip4" onkeypress="$(this).mask('(00) 00000-0000')" placeholder="(__) _____-____">
     <?php } 
 
     if (isset($_SESSION["data"]["cpf"])) { ?>
+        <div class="column">
         <label id="p5">CPF</label>
-        <input type="text" name="cpf" id="ip5" onkeypress="$(this).mask('000.000.000-00');" <?php echo 'value="'. $_SESSION["data"]["cpf"] .'"'; ?>>
+        <input type="text" name="cpf" id="ip5" onkeypress="$(this).mask('000.000.000-00');" placeholder="___.___.___-__" <?php echo 'value="'. $_SESSION["data"]["cpf"] .'"'; ?>>
     <?php } else { ?>
         <div class="column">
         <label id="p5">CPF</label>
@@ -70,7 +71,8 @@ function input_form() {
 
     if (isset($_SESSION["data"]["cep"])) { ?>
         <label id="p6">CEP</label>
-        <input type="text" name="cep" id="ip6" onkeypress="$(this).mask('00.000-000');" <?php echo 'value="'. $_SESSION["data"]["cep"] .'"'; ?>>
+        <input type="text" name="cep" id="ip6" onkeypress="$(this).mask('00.000-000');"  placeholder="__.___-___" <?php echo 'value="'. $_SESSION["data"]["cep"] .'"'; ?>>
+        </div>
     <?php } else { ?>
         <label id="p6">CEP</label>
         <input type="text" name="cep" id="ip6" onkeypress="$(this).mask('00.000-000');" placeholder="__.___-___">

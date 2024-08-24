@@ -10,7 +10,7 @@ header {
     margin: 4vh auto;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: space-around;
 }
 
 .a a {
@@ -23,16 +23,23 @@ header {
     flex-direction: column;
     width: 25vw;
     align-items: center;
+    margin: 1em;
 }
 
-.column>figure {
-    max-width: 25vw;
-    padding: 6vh 0 1vh;
+.column a figure {
+    /* max-width: 25vw;
+    padding: 6vh 0 1vh; */
+    background-color: black;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.column>figure>img {
-    max-width: 100%;
-    height: auto;
+.column a figure img {
+    max-height: 20rem;
+    width: auto;
     transition-duration: 0.2s;
 }
 

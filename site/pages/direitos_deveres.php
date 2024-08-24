@@ -12,15 +12,9 @@
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.svg" alt="logo"></a>
-        <ul class="nav_links">
-            <li><a href="../pages/animais.php">Animais</a></li>
-            <li><a href="./direitos_deveres.html">Direitos e deveres</a></li>
-            <li><a href="./doacao.html">Doações</a></li>
-            <li><a href="../pages/form.php">Contato</a></li>
-        </ul>
-    </nav>
+    <?php
+    require '../componentes/navbar.php';
+    ?>
 
     <header>
         <h1>Direitos e Deveres</h1>
@@ -82,16 +76,9 @@
         </section>
     </main>
 
-    <footer>
-        <ul class="footer_links">
-            <li><a href="">Nome/logo</a></li>
-            <li><a href="">Animais</a></li>
-            <li><a href="">Direitos e deveres</a></li>
-            <li><a href="">Doações</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="./login.php">Login</a></li>
-        </ul>
-    </footer>
+    <?php
+    require '../componentes/footer.php';
+    ?>
 </body>
 
 </html>
