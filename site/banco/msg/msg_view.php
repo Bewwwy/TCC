@@ -34,11 +34,11 @@ function input_msg() {
         }
         if (isset($_SESSION["msg_data"]["msg"])) {
             echo '<label for="Descricao">Mensagem</label>
-            <textarea name="msg" placeholder="Mensagem..." cols="30" rows="5"id="msg">'. $_SESSION["msg_data"]["msg"].'</textarea>
+            <textarea name="msg" placeholder="Mensagem..." cols="30" rows="7" id="msg">'. $_SESSION["msg_data"]["msg"].'</textarea>
             <p id="result">0/700</p>';
         } else {
-            echo '<label for="Descricao">Descrição</label>
-            <textarea name="msg" placeholder="Mensagem..." cols="30" rows="5" id="msg"></textarea>
+            echo '<label for="Descricao">Mensagem</label>
+            <textarea name="msg" placeholder="Mensagem..." cols="30" rows="7" id="msg"></textarea>
             <p id="result">0/700</p>';
         }
         unset($_SESSION['msg_data']);

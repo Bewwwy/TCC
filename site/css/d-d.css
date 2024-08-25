@@ -25,7 +25,9 @@ article h2 {
 
 .d li {
     list-style: inside;
+    list-style-type: decimal;
     margin: 1.5em 0;
+    padding-left: 1rem;
     text-align: justify;
     list-style-position: outside;
     line-height: 1.5;
