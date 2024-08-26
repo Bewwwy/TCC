@@ -58,6 +58,11 @@ a {
     margin: 1vh 1vw;
 }
 
+img {
+    max-width: 12rem;
+    max-height: 12rem;
+}
+
 .tableAnimal {
     border: 2em;
     margin: 25px 0;
@@ -101,6 +106,6 @@ a {
 }
 
 #voltar:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(99, 99, 99);
     transition: ease 0.3s;
 }

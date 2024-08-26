@@ -67,13 +67,23 @@ input {
     border: 1.5px solid #b2b2b2;
 }
 
+a {
+    color: black;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+a:hover{
+    color: rgb(58, 94, 255);
+}
+
 #btnadm {
     padding: 0.5rem;
     margin-top: 3vh;
     text-align: center;
     align-self: center;
     width: 10vw;
-    height: 5vh;
+    height: 6vh;
     background-color: rgb(134, 134, 134);
     color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -82,7 +92,6 @@ input {
 }
 
 #btnadm:hover{
-    background-color: rgb(170, 170, 170);
-    color: rgb(0,0,0);
+    background-color: rgb(116, 116, 116);
     transition: 0.3s ease;
 }

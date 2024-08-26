@@ -9,17 +9,18 @@ require_once '../banco/conexao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mens.css">
     <title>Mensagens</title>
 </head>
 <body>
     <h1>Mensagens</h1>
-    <a href="./adm.html">Voltar</a>
     <div class='msg'>
-        <p>ID mensagem</p>
-        <h2>Nome</h2>
-        <h3>Email</h3>
-        <p>Mensagem...</p>
+        <p id="id">ID mensagem</p>
+        <h2 id="nome">Nome</h2>
+        <h3 id="email">Email</h3>
+        <p id="mens">Mensagem...</p>
     </div>
+
 
     <?php
         $query = "SELECT * FROM tb_msg ORDER BY ID_msg;";
@@ -40,5 +41,7 @@ require_once '../banco/conexao.php';
             echo"</div>"; 
         }
     ?>
+    <a href="./adm.html">Voltar</a>
+    
 </body>
 </html>

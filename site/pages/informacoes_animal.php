@@ -13,6 +13,7 @@ $id = $_GET['id'];
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/infoAni.css">
     <title>Informações do animal</title>
 </head>
 <body>
