@@ -3,17 +3,92 @@ header {
     padding-top: 18vh;
     padding-bottom: 18vh;
 }
-
-.a {
-    background-color: var(--white);
-    width: 100rem;
-    margin: 4vh auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
+.content {
+    background-color: rgb(226, 226, 226);
 }
 
-.a a {
+.a {
+    /* background-color: var(--white); */
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    gap: 15px;
+    justify-content: center;
+    margin: 4vh auto;
+    /*display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center; */
+}
+
+.animal {
+    background-color: rgb(236, 236, 236);
+    background-color: white;
+    /* background-color: rgb(192, 148, 156); */
+    margin: 2vh 0;
+    text-decoration: none;
+    border-radius: 8px;
+    /* width: 25vw;
+    margin: .5rem; */
+}
+
+.animal:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, .25);
+    background-color: rgb(240, 204, 214);
+}
+
+.animal a h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: .5rem;
+}
+
+.animal a:hover p, a:hover h2{
+    color: rgb(189, 58, 100);
+}
+
+
+/* .animal a h2:hover {
+    color: rgb(160, 59, 91);
+} */
+
+a p {
+    color: black;
+    margin: 0 2rem 3vh;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+figure {
+    /* background-color: rgb(228, 228, 228); */
+    /* background-color: rgb(192, 148, 156); */
+    /* width: 19rem;
+    height: 19rem; */
+    border-radius: 5px 5px 0 0;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img {
+    max-width: 18rem;
+    max-height: 18rem;
+    border-radius: 6px;
+    /* max-width: 20vw; */
+    /* height: 20rem;
+    width: auto;
+    max-width: 20rem; */
+    /* width: auto;
+    max-height: 20rem;
+    height: auto; */
+}
+
+/* .a a {
     margin: 1em;
 }
 
@@ -29,7 +104,7 @@ header {
 .column a figure {
     /* max-width: 25vw;
     padding: 6vh 0 1vh; */
-    background-color: black;
+    /* background-color: black;
     width: 20rem;
     height: 20rem;
     display: flex;
@@ -63,4 +138,4 @@ header {
     width: 20vw;
     margin-bottom: 5vh;
     line-height: 1.5;
-}
+} */

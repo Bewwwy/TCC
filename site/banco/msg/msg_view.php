@@ -21,7 +21,7 @@ function input_msg() {
             echo '<label for="nome" id="p1">Nome completo</label>
             <input type="text" name="nome" id="ip1" placeholder="Nome completo..." value="'. $_SESSION["msg_data"]["nome"] . '">';
         } else {
-            echo '<label for="nome" id="p1">Nome</label>
+            echo '<label for="nome" id="p1">Nome completo</label>
             <input type="text" name="nome" id="ip1" placeholder="Nome completo...">';
         }
     
