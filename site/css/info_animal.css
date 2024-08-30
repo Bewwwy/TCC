@@ -1,0 +1,85 @@
+img {
+    max-width: 38rem;
+    max-height: 38rem;
+}
+
+.animal {
+    /* background-color: white; */
+    /* width: 80vw; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 4vh auto;
+    gap: 2rem;
+}
+
+.foto {
+    background-color: rgb(240, 204, 214);
+    width: 40rem;
+    height: 45rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.infos {
+    background-color: white;
+    width: 40rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 15px;
+}
+
+h2 {
+    /* background-color: rgb(189, 58, 100); */
+    padding: 2rem 0;
+    margin-left: 3vw;
+    justify-self: left;
+    font-size: 2.8rem;
+    font-weight: 600;
+    width: fit-content;
+    /* color: white; */
+}
+
+p {
+    /* background-color: darkkhaki; */
+    /* padding: 2mm; */
+}
+
+#idade, #sexo {
+    width: fit-content;
+    margin-left: 3vw;
+    font-size: 1.2rem;
+    padding: .8rem 0;
+}
+
+#descr { 
+    /* background-color: aliceblue; */
+    color: rgb(71, 71, 71);
+    width: 40rem;
+    height: 14rem;
+    margin-top: 2vh;
+    padding: 0 2.2rem 0 3vw;
+    text-align: left;
+    line-height: 1.6;
+    border-bottom: 1px rgb(168, 168, 168) solid;
+}
+
+#btn {
+    background-color: rgb(189, 58, 100);
+    width: 17rem;
+    padding: 1rem;
+    color: white;
+    margin: 5vh 0 5vh 3vw;
+    align-items: center;
+    border-radius: 6px;
+}
+
+#btn:hover {
+    background-color: rgb(199, 88, 123);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .25);
+}
