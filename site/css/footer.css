@@ -26,7 +26,7 @@ footer {
     margin-top: 2vh;
     font-size: 1.2rem;
     text-align: justify;
-    color: white;
+    color: rgb(221, 221, 221);
     line-height: 1.5;
 }
 
@@ -47,11 +47,11 @@ footer {
 .col ul li {
     text-align: left;
     font-size: 1.3rem;
-    color: white;
+    color: rgb(221, 221, 221);
     margin-top: .5rem;
 }
 .col ul li a {
-    color: white;
+    color: rgb(221, 221, 221);
 }
 .col ul li a:hover {
     color: rgb(0, 0, 0);
@@ -69,7 +69,7 @@ footer {
     border-radius: 50%;
     max-width: 14rem;
     max-height: 14rem;
-    margin: 2vh 0 0 3vw;
+    margin: 6vh 0 0 3vw;
 }
 
 
