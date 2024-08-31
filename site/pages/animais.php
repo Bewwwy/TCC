@@ -50,7 +50,7 @@ require_once '../banco/conexao.php';
                     echo "<a href='informacoes_animal.php?id=". $row['ID_pet'] ."'>";
                     ?>
                     
-                    <figure><img src='../uploads/<?php echo $row['foto']?>' alt="animal"></figure><?php
+                    <figure><img src='../uploads/<?php echo $row['foto']?>' id="f_a" alt="animal"></figure><?php
                     echo "<h2 class='text'>". $row['nome_pet']. "</h2>";
                     echo "<p class='text'>". $row['descr']. "</p>";
                     echo "</a></div>";

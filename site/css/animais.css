@@ -75,7 +75,7 @@ figure {
     justify-content: center;
 }
 
-figure img {
+#f_a {
     max-width: 18rem;
     max-height: 18rem;
     border-radius: 6px;

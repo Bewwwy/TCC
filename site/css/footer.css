@@ -1,12 +1,82 @@
 footer {
     background-color: rgb(133, 48, 73);
-    height: 15vh;
-    display: flex;
-    justify-content: space-around;
+    height: fit-content;    
+    /* justify-content: space-evenly; */
 }
 
-.footer_links {
-    /* background-color: aquamarine; */
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+
+
+.intro {
+    /* background-color: aliceblue; */
+    max-width: 38rem;
+    margin: 6vh 3vw 0 3vw;
+}
+.intro h4 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: white;
+}
+.intro p {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: white;
+    line-height: 1.5;
+}
+
+.col {
+    /* background-color: antiquewhite; */
+    width: 18rem;
+    margin: 6vh 2vw 3vh 1.5vw;
+}
+.col h4 {
+    font-size: 1.8rem;
+    text-align: left;
+    color: white;
+}
+.col ul {
+    margin-top: 2vh;
+}
+
+.col ul li {
+    text-align: left;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: .5rem;
+}
+.col ul li a {
+    color: white;
+}
+.col ul li a:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+
+
+.f_logo {
+    /* background-color: aliceblue; */
+    width: 20rem;
+}
+
+#logo {
+    border-radius: 50%;
+    max-width: 14rem;
+    max-height: 14rem;
+    margin: 2vh 0 0 3vw;
+}
+
+
+
+
+/* .footer_links {
+    background-color: aquamarine;
     width: 70vw;
     display: flex;
     justify-content: space-around;
@@ -14,7 +84,7 @@ footer {
 }
 
 .footer_links li {
-    /* background-color: yellow; */
+    background-color: yellow;
     margin: 10vh 0;
 }
 
@@ -25,4 +95,4 @@ footer {
 .footer_links li a:hover {
     color: rgb(0, 0, 0);
     transition: 0.3s ease;
-}
+} */

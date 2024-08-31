@@ -36,7 +36,7 @@ $id = $_GET['id'];
 
                 foreach($result as $row) {
 
-                    echo "<div class='foto'><figure><img src='../uploads/". $row['foto']. "' alt='gatos'></figure></div>";
+                    echo "<div class='foto'><figure><img src='../uploads/". $row['foto']. "' id='f_a' alt='gatos'></figure></div>";
                     echo "<div class='infos'><h2>". $row['nome_pet']. "</h2>";
                     echo "<p id='idade'>Idade: ". $row['idade']. " ano(s)</p>";
                     echo "<p id='sexo'>Sexo: ". $row['sexo']. "</p>";

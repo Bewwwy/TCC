@@ -1,5 +1,5 @@
-img {
-    max-width: 38rem;
+#f_a {
+    max-width: 60vw;
     max-height: 38rem;
 }
 
@@ -17,7 +17,9 @@ img {
 .foto {
     background-color: rgb(240, 204, 214);
     width: 40rem;
-    height: 45rem; 
+    max-width: 70vw;
+    height: 45rem;
+    max-height: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
