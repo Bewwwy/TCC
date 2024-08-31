@@ -16,12 +16,14 @@ require_once '../banco/conexao.php';
     <h1>Mensagens</h1>
     <div class='msg'>
         <p id="id">ID mensagem</p>
-        <h2 id="nome">Nome</h2>
-        <h3 id="email">Email</h3>
-        <p id="mens">Mensagem...</p>
+        <p id="nome">Nome</p>
+        <p id="email">Email</p>
     </div>
-
-
+    
+    <div class="msg2">
+        <p>Mensagem...</p>
+    </div>
+    
     <?php
         $query = "SELECT * FROM tb_msg ORDER BY ID_msg;";
 
