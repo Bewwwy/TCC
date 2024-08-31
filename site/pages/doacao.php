@@ -28,22 +28,22 @@
     <main class="content">
         <div class="banco">
             <div class="text">
-                <h3>wawa</h3>
-                <h3>wawa</h3>
-                <h3>wawa</h3>
+                <h3>Nossa organização</h3>
+                <h3>PIX:</h3>
+                <h3>Nome:</h3>
+                <img src="../images/qrcode.jpg" alt="qrcode">
             </div>
-            <img src="../images/qrcode.jpg" alt="qrcode">
         </div>
 
         <div class="outro">
             <h1>Outras organizações</h1>
             <div class="banco2">
                 <div class="text">
-                    <h3>wawa</h3>
-                    <h3>wawa</h3>
-                    <h3>wawa</h3>
+                    <h3>Nome da ONG</h3>
+                    <h3>PIX:</h3>
+                    <h3>Nome:</h3>
+                    <img src="../images/qrcode.jpg" alt="qrcode">
                 </div>
-                <img src="../images/qrcode.jpg" alt="qrcode">
             </div>
         </div>
     </main>

@@ -29,11 +29,11 @@ body {
 
 .page {
     background-color: rgb(190, 137, 137);
-    width: 30vw;
-    height: 50vh;
+    width: 30%;
+    height: 50%;
     width: fit-content;
     height: fit-content;
-    padding: 4vh 3vw;
+    padding: 4vh 4vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,13 +44,13 @@ body {
 
 h1 {
     font-size: xx-large;
-    margin: 1vh 1vh 1vh;
+    margin-bottom: 0.5rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 15vw;
 }
 
 label {
@@ -82,8 +82,8 @@ a:hover{
     margin-top: 3vh;
     text-align: center;
     align-self: center;
-    width: 10vw;
-    height: 6vh;
+    width: 7vw;
+    height: 5vh;
     background-color: rgb(134, 134, 134);
     color: rgb(255, 255, 255);
     border-radius: 5px;

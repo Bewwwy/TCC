@@ -7,13 +7,18 @@ header {
 .banco {
     /* background-color: aliceblue; */
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     border-style: solid;
-    margin-top: 3em;
+    margin-top: 1.5em;
     align-items: center;
     height: 50vh;
-    width: 30vw;
+    width: 25vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2em;
 }
 
 .outro {
@@ -45,7 +50,7 @@ header {
     text-align: center;
     align-items: center;
     height: 50vh;
-    width: 30vw;
+    width: 25vw;
     background-color: var(--l_grey);
 }
 
