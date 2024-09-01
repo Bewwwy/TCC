@@ -39,7 +39,7 @@ require_once '../banco/conexao.php';
             echo "<h2>". $row['nome_completo'] . "</h2>";
             echo "<h3>". $row['email'] . "</h3>";
             echo "<p>". $row['msg'] . "</p>";
-            echo "<td><a href='../banco/adocao/delete/deletehandler.php?id=". $row['ID_msg'] ."'>Excluir</a></td>";
+            echo "<td><a href='../banco/msg/delete/deletehandler.php?id=". $row['ID_msg'] ."'>Excluir</a></td>";
             echo"</div>"; 
         }
     ?>
