@@ -1,5 +1,5 @@
 #f_a {
-    max-width: 60vw;
+    max-width: 90%;
     max-height: 38rem;
 }
 
@@ -29,6 +29,7 @@
 .infos {
     background-color: white;
     width: 40rem;
+    max-width: 100vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -63,6 +64,7 @@ p {
     /* background-color: aliceblue; */
     color: rgb(71, 71, 71);
     width: 40rem;
+    max-width: 100vw;
     height: 14rem;
     margin-top: 2vh;
     padding: 0 2.2rem 0 3vw;
@@ -74,6 +76,7 @@ p {
 #btn {
     background-color: rgb(189, 58, 100);
     width: 17rem;
+    max-width: 100vw;
     padding: 1rem;
     color: white;
     margin: 5vh 0 5vh 3vw;

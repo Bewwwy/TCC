@@ -13,37 +13,29 @@ require_once '../banco/conexao.php';
     <title>Mensagens</title>
 </head>
 <body>
-    <h1>Mensagens</h1>
-    <div class='msg'>
-        <p id="id">ID mensagem</p>
-        <p id="nome">Nome</p>
-        <p id="email">Email</p>
-    </div>
-    
-    <div class="msg2">
-        <p>Mensagem...</p>
-    </div>
-    
-    <?php
-        $query = "SELECT * FROM tb_msg ORDER BY ID_msg;";
+    <div class="container">
+        <h1>Mensagens</h1><a href="./adm.html" id='vol'>Voltar</a>
+        
+        <?php
+            $query = "SELECT * FROM tb_msg ORDER BY ID_msg;";
 
-        $stmt = $pdo->prepare($query);
-        $stmt->execute();
+            $stmt = $pdo->prepare($query);
+            $stmt->execute();
+            
+            $result = $stmt->fetchAll();
+            
+            
+            foreach($result as $row) {
+                echo "<div class='msg'><div class='row'>";
+                echo "<p id='id'>ID: ". $row['ID_msg'] . "</p>";
+                echo "<h2 id='nome'>Nome: ". $row['nome_completo'] . "</h2>";
+                echo "<h3 id='email'>Email: ". $row['email'] . "</h3></div>";
+                echo "<p id='msg'>". $row['msg'] . "</p>";
+                echo "<a href='../banco/msg/delete/deletehandler.php?id=". $row['ID_msg'] ."' id='exc' >Excluir</a>";
+                echo"</div>"; 
+            }
+        ?>
         
-        $result = $stmt->fetchAll();
-        
-        
-        foreach($result as $row) {
-            echo "<div class='msg'>";
-            echo "<p>". $row['ID_msg'] . "</p>";
-            echo "<h2>". $row['nome_completo'] . "</h2>";
-            echo "<h3>". $row['email'] . "</h3>";
-            echo "<p>". $row['msg'] . "</p>";
-            echo "<td><a href='../banco/msg/delete/deletehandler.php?id=". $row['ID_msg'] ."'>Excluir</a></td>";
-            echo"</div>"; 
-        }
-    ?>
-    <a href="./adm.html">Voltar</a>
-    
+    </div>
 </body>
 </html>

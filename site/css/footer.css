@@ -67,7 +67,7 @@ footer {
 
 #logo {
     border-radius: 50%;
-    max-width: 14rem;
+    max-width: 100%;
     max-height: 14rem;
     margin: 6vh 0 0 3vw;
 }
