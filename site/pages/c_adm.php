@@ -8,11 +8,13 @@ require_once '../banco/adm/c_adm_view.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/c_adm.css">
     <title>Cadastrar ADMs</title>
 </head>
 <body>
-    <h1>Cadastrar ADM</h1>
-    <form action="../banco/adm/c_admhandler.php" method="post">
+    <div class="cad-adm">
+        <h1>Cadastrar ADM</h1>
+        <form action="../banco/adm/c_admhandler.php" method="post">
         <!-- <label for="nome">Nome</label>
         <input type="text" name="nome" id="" placeholder="Nome">
         <label for="user">Usuário</label>
@@ -23,8 +25,9 @@ require_once '../banco/adm/c_adm_view.php';
         <?php 
         input_cadastro();
         ?>
-        <button>Cadastrar</button>
-    </form>
+        </form>
+        <button id="btn">Cadastrar</button>
+    </div>
     <?php
 
     check_erros_cadastro();

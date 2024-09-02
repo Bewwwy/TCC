@@ -29,7 +29,7 @@ function input_cadastro() {
         <input type="text" name="nome_pet" placeholder="Nome do animal" value="'. $_SESSION["signup_data"]["nome_pet"].'">';
     } else {
         echo '<label for="nome_pet">Nome do animal</label>
-        <input type="text" name="nome_pet" placeholder="Nome do animal">';
+        <input type="text" name="nome_pet" id="lb1" placeholder="Nome do animal">';
     }
 
     echo '<label for="foto">Foto</label>
@@ -40,7 +40,7 @@ function input_cadastro() {
         <input type="number" name="idade" placeholder="Idade em anos" min="0" value="'.$_SESSION["signup_data"]["idade"].'">';
     } else {
         echo '<label for="idade">Insira a idade do animal em anos inteiros*</label>
-        <input type="number" name="idade" min="0" value="0">';
+        <input type="number" name="idade" id="lb2" min="0" value="0">';
     }
 
     echo '<label for="sexo">Sexo</label>

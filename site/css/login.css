@@ -30,7 +30,7 @@ body {
 .page {
     background-color: rgb(190, 137, 137);
     width: 30%;
-    height: 50%;
+    height: 60%;
     width: fit-content;
     height: fit-content;
     padding: 4vh 4vw;
@@ -44,23 +44,33 @@ body {
 
 h1 {
     font-size: xx-large;
-    margin-bottom: 0.5rem;
+    margin: 1vh 0 2vh 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    height: 35vh;
     width: 15vw;
 }
 
 label {
     align-self: flex-start;
-    margin: 2vh 0 1vh;
+    margin: 1vh 0 1vh;
     flex-direction: column;
+}
+
+#lb1 {
+    margin-top: -0.5em;
+}
+
+#lb2 {
+    margin-top: -0.5em;
 }
 
 input {
     padding: 1rem;
+    margin: 1vh 0 2vh 0;
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -79,10 +89,10 @@ a:hover{
 
 #btnadm {
     padding: 0.5rem;
-    margin-top: 3vh;
+    margin: 5vh 0 1vh 0;
     text-align: center;
     align-self: center;
-    width: 7vw;
+    width: 13vw;
     height: 5vh;
     background-color: rgb(134, 134, 134);
     color: rgb(255, 255, 255);

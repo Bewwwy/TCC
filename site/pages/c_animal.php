@@ -8,11 +8,13 @@ require_once '../banco/animal/c_animal_view.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/c_animal.css">
     <title>Cadastrar Animal</title>
 </head>
 <body>
-    <h1>Cadastrar Animal</h1>
-    <form action="../banco/animal/c_animalhandler.php" method="post" enctype="multipart/form-data">
+    <div class="cad-animal">
+        <h1>Cadastrar Animal</h1>
+        <form action="../banco/animal/c_animalhandler.php" method="post" enctype="multipart/form-data">
         <!-- <label for="nome_pet">Nome do animal</label>
         <input type="text" name="nome_pet" placeholder="Nome do animal">
 
@@ -34,9 +36,10 @@ require_once '../banco/animal/c_animal_view.php';
 
         <?php 
         input_cadastro();
-        ?> 
+        ?>
+        </form>
         <button type="submit">Cadastrar</button>
-    </form>
+    </div>
     <?php
 
     check_erros_cadastro();
