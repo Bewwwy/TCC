@@ -14,19 +14,22 @@ require_once '../banco/create_default.php';
     <title>Login</title>
 </head>
 <body>
-    <div class="page">
+    <div class="login">
         <h1>Fazer Login</h1>
         <form action="../banco/loginhandler.php" method="post">
-            <label for="user">Usuário</label>
-            <input type="text" name="user" id="lb1" placeholder="Usuário">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="lb2" placeholder="Senha">
+            <div class="row">
+                <label for="user">Usuário</label>
+                <input type="text" name="user" placeholder="Usuário">
+            </div>
+            <div class="row">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            
             <button id="btnadm">Entrar</button>
+            <a href="../index.html">Voltar para à Home</a>
         </form>
     </div>
-
-    <a href="../index.html">Voltar para à Home</a>
-
     <?php
     check_erros_login();
 
