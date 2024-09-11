@@ -14,19 +14,16 @@ function input_cadastro() {
         echo '<label for="nome">Nome</label>
         <input type="text" name="nome" id="" placeholder="Nome" value="'. $_SESSION["signup_data"]["nome"] . '">';
     } else {
-        echo '<label for="nome">Nome</label>
-        <input type="text" name="nome" id="lb1" placeholder="Nome">';
+        echo '<input type="text" name="nome" id="lb1" placeholder="Nome">';
     }
 
     if (isset($_SESSION["signup_data"]["user"]) && !isset($_SESSION["erros_cadastro"]["user_taken"])) {
         echo '<label for="user">Usuário</label>
         <input type="text" name="user" placeholder="Usuário" value="' . $_SESSION["signup_data"]["user"] .'">';
     } else {
-        echo '<label for="user">Usuário</label>
-        <input type="text" name="user" id="lb2" placeholder="Usuário">';
+        echo '<input type="text" name="user" id="lb2" placeholder="Usuário">';
     }
-    echo '<label for="senha">Senha</label>
-    <input type="password" name="senha" id="lb3" placeholder="Senha">';
+    echo '<input type="password" name="senha" id="lb3" placeholder="Senha">';
 }
 
 function check_erros_cadastro() {
