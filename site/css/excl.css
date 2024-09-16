@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+body {
+    background-color: #F0F3F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.q {
+    background-color: #FFFFFF;
+    width: 50rem;
+    max-width: 100vw;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+    /* box-shadow: 9px 8px 0px 9px rgba(77, 77, 77, 0.25); */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* div dos botoes */
+.btns {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+}
+
+
+/* botao excluir */
+#excl{
+    background-color: rgb(189, 58, 100);
+    width: 9rem;
+    max-width: 100vw;
+    padding: .7rem;
+    margin-top: 5vh;
+
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    transition: .9s ease;
+}
+
+#excl:hover {
+    background-color: rgb(216, 103, 135);
+    cursor: pointer;
+    color: rgb(66, 66, 66);
+    transition: .5s ease;
+}
+
+/* botao cancelar */
+#canc {
+    background-color: rgb(189, 58, 100);
+    width: 9rem;
+    max-width: 100vw;
+    padding: .7rem;
+    margin-top: 5vh;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    transition: .9s ease;
+}
+
+#canc:hover {
+    background-color: rgb(216, 103, 135);
+    cursor: pointer;
+    color: rgb(66, 66, 66);
+    transition: .5s ease;
+}
