@@ -4,16 +4,18 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 90rem;
     max-width: 98.6vw;
     margin: 1.5rem auto;
 }
 
 .b {
     background-color: var(--white);
-    width: 80vw;
+    width: 90rem;
+    max-width: 100vw;
     margin: 4vh auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -102,7 +104,7 @@ figure>img {
 
 .row1 figure {
     /* background-color: black;   */
-    width: 33rem;
+    width: 45rem;
     max-width: 100vw;
     display: flex;
     justify-content: end;
@@ -130,7 +132,7 @@ figure>img {
 
 .row2 figure {
     /* background-color: black; */
-    width: 33rem;
+    width: 45rem;
     max-width: 100vw;
     display: flex;
     justify-content: start;
@@ -138,7 +140,7 @@ figure>img {
 
 .text {
     /* background-color: crimson; */
-    width: 33rem;
+    width: 45rem;
     max-width: 98vw;
     padding: 2rem 1rem;
     line-height: 1.5;
@@ -164,20 +166,26 @@ figure>img {
     /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    width: 20rem;
     align-items: center;
     margin: 1em;
 }
 
 .column figure {
-    max-width: 25vw;
+    /* background-color: black; */
+    /* width: 20rem; */
+    max-width: 100vw;
     padding: 6vh 0 1vh;
+    display: flex;
+    justify-content: center;
 }
 
 .column figure img {
-    max-width: 100%;
-    height: auto;
+    background-color: black;
+    max-width: 90vw;
+    max-height: 20rem;
     border-radius: 8px;
+    margin: 0 1rem;
 }
 
 .column figure img:hover {
@@ -197,7 +205,8 @@ figure>img {
 }
 
 .column p {
-    width: 20vw;
+    width: 25rem;
+    max-width: 90vw;
     margin-bottom: 5vh;
     line-height: 1.5;
 }
