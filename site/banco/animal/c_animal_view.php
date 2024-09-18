@@ -33,7 +33,7 @@ function input_cadastro() {
     }
 
     echo '<label for="foto">Foto</label>
-    <input type="file" name="foto" accept=".jpeg, .jpg, .png">';
+    <input id="fotinha" type="file" name="foto" accept=".jpeg, .jpg, .png">';
 
     if (isset($_SESSION["signup_data"]["idade"])){
         echo '<label for="idade">Insira a idade do animal em anos*</label>
@@ -52,7 +52,7 @@ function input_cadastro() {
 
     if (isset($_SESSION["signup_data"]["descr"])) {
         echo '<label for="Descricao">Descrição</label>
-        <input type="text" name="descr" placeholder="Descrição..." id="msg" value="'. $_SESSION["signup_data"]["descr"].'"></textarea>
+        <textarea id="desc" type="text" name="descr" placeholder="Descrição..." id="msg" value="'. $_SESSION["signup_data"]["descr"].'"></textarea>
         <p id="result">0/700</p>';
     } else {
         echo '<label for="Descricao">Descrição</label>

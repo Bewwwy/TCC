@@ -22,8 +22,8 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 100vw;
-    height: fit-content;
-    width: fit-content;
+    /* height: fit-content;
+    width: fit-content; */
     padding: 10vh 5vw 15vh 5vw;
     border: 2px black solid;
     background-color: white;
@@ -45,6 +45,10 @@ a {
 form {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    margin: 0 0 .5vh 0;
 }
 
 form input {
