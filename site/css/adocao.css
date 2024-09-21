@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgb(190, 137, 137);
+    background-color: rgb(240, 204, 214);
 }
 
 .container {
@@ -45,6 +45,7 @@ form label {
 }
 
 form input {
+    background-color: rgb(241, 241, 241);
     position: relative;
     height: 50px;
     width: 100%;
@@ -92,15 +93,20 @@ form #btn {
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.3s ease;
-    background-color: rgb(190, 137, 137);;
+    background-color: rgb(189, 58, 100);
 }
 
 form #btn:hover {
-    background-color: rgb(197, 122, 122);
+    background-color: rgb(223, 99, 138);
 }
 
 @media screen and (max-width: 500px) {
     form .column {
         flex-wrap: wrap;
     }
+}
+
+.form-success {
+    margin: 2rem;
+    font-size: 1.2rem;
 }

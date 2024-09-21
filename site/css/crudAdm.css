@@ -61,7 +61,7 @@ a {
 
 .tableADM {
     border: 2em;
-    margin: 10px;
+    margin: 2rem;
     font-size: 0.9em;
     min-width: 400px;
     border: 1px solid;
@@ -72,6 +72,10 @@ a {
     border: 1px solid;
     padding: 12px 15px;
     font-weight: bold;
+}
+
+thead {
+    background-color: rgb(192, 192, 192);
 }
 
 .tableADM td {
@@ -85,7 +89,7 @@ a {
 
 #novo {
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 1em;
+    border-radius: 7px;
     padding: 1vh 1vw;
     text-decoration-color: black;  
 }

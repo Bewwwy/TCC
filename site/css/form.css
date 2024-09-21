@@ -126,14 +126,15 @@ label {
 input {
     padding: 1rem;
     text-align: left;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(241, 241, 241);
     border-radius: 5px;
     border: 1.5px solid #b2b2b2;
 }
 
 input:focus, textarea:focus {
     background-color: white;
-    border-color: #a74a69;
+    border-bottom: 1px solid rgb(189, 58, 100);
+    transition: 0.2s ease-in;
 }
 
 textarea {
@@ -158,15 +159,19 @@ textarea {
     text-align: center;
     align-self: center;
     width: 10rem;
-    background-color: rgb(134, 134, 134);
-    color: rgb(255, 255, 255);
+    background-color: rgb(189, 58, 100);
+    color: white;
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.3s;
 }
 
 #btn:hover {
-    background-color: rgb(170, 170, 170);
-    color: rgb(0,0,0);
+    background-color: rgb(223, 99, 138);
     transition: 0.3s ease;
+}
+
+.form-success {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
