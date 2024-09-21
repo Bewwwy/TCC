@@ -52,7 +52,7 @@ require_once '../banco/conexao.php';
                     
                     <figure class="an"><img src='../uploads/<?php echo $row['foto']?>' id="f_a" alt="animal"></figure><?php
                     echo "<h2 class='text'>". $row['nome_pet']. "</h2>";
-                    echo "<p class='text'>". $row['descr']. "</p>";
+                    echo "<p class='descr'>". $row['descr']. "</p>";
                     echo "</a></div>";
                 }
             ?>

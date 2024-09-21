@@ -53,7 +53,7 @@ header {
     color: rgb(160, 59, 91);
 } */
 
-a p {
+a .descr {
     color: black;
     margin: 0 2rem 3vh;
     text-align: center;
