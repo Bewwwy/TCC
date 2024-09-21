@@ -7,9 +7,19 @@ nav {
     flex-wrap: wrap;
 }
 
+#home {
+    display: flex;
+    align-items: center;
+}
+
+#home {
+    color: black;
+    font-size: x-large;
+}
+
 .logo {
     height: 9vh;
-    margin: .8vh 2vw;
+    margin: .8vh 1vw .8vh 2vw;
     cursor: pointer;
 }
 
