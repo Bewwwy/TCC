@@ -87,7 +87,7 @@ header {
     border: 2px solid black;
     margin: 2vh 0 1vh;
     padding: 4vh 5vw 7vh;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--l_grey);
 }
 
 h1, h3 {
