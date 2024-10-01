@@ -22,12 +22,10 @@ require_once '../banco/conexao.php';
     ?>
 
     <header>
-        <h1>Título da página animais</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare lacinia felis, id dictum eros malesuada
-            vitae. Donec bibendum pellentesque odio semper placerat.
-            Vivamus eget quam at lectus feugiat ultrices. Morbi eget tortor nisi. Nunc auctor porta venenatis. Proin sit
-            amet porta metus. Maecenas varius placerat nulla, id porta
-            tortor consequat ac.</h3>
+        <h1>Descruba seu novo companheiro!</h1>
+        <h3>Nesta página, é possível encontrar nossos animais prontos para serem 
+            adotados e que desejam encontrar uma residência amorosa. Cada animal 
+            possui características únicas, uma história própria e muito amor para dar.</h3>
     </header>
 
     <main class="content">

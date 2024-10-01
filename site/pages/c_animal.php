@@ -36,9 +36,9 @@ require_once '../banco/animal/c_animal_view.php';
 
         <?php 
         input_cadastro();
-        ?>
+        ?><button type="submit">Cadastrar</button>
         </form>
-        <button type="submit">Cadastrar</button>
+        
     </div>
     <?php
 

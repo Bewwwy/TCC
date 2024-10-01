@@ -25,8 +25,9 @@ require_once '../banco/adm/c_adm_view.php';
         <?php 
         input_cadastro();
         ?>
-        </form>
         <button id="btn">Cadastrar</button>
+        </form>
+        
         <a href="./CRUDADMs.php">Voltar</a>
     </div>
     <?php

@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 7px;
+    border-radius: 8px;
     /* box-shadow: 9px 8px 0px 9px rgba(77, 77, 77, 0.25); */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
@@ -53,12 +53,11 @@ p {
 
 /* botao excluir */
 #excl{
-    background-color: rgb(189, 58, 100);
+    background-color: rgb(202, 27, 27);
     width: 9rem;
     max-width: 100vw;
     padding: .7rem;
     margin-top: 5vh;
-
     font-weight: bold;
     border-radius: 5px;
     color: white;
@@ -66,15 +65,14 @@ p {
 }
 
 #excl:hover {
-    background-color: rgb(216, 103, 135);
+    background-color: rgb(206, 106, 106);
     cursor: pointer;
-    color: rgb(66, 66, 66);
-    transition: .5s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
 }
 
 /* botao cancelar */
 #canc {
-    background-color: rgb(189, 58, 100);
+    background-color: rgb(109, 186, 54);
     width: 9rem;
     max-width: 100vw;
     padding: .7rem;
@@ -86,8 +84,11 @@ p {
 }
 
 #canc:hover {
-    background-color: rgb(216, 103, 135);
+    background-color: rgb(147, 206, 106);
     cursor: pointer;
-    color: rgb(66, 66, 66);
-    transition: .5s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+}
+
+#exc_msg {
+    margin: 3vh 0 1vh;
 }

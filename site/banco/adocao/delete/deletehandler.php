@@ -29,7 +29,7 @@
 
                 $stmt = $pdo->prepare($query);
                 $stmt->execute();
-                echo "Exlcuido com sucesso.";
+                echo "<p id='exc_msg'>Excluído com sucesso.</p>";
                 echo "<a href='../../../pages/p_adocao.php'>Voltar</a>";
 
             } elseif (isset($_POST['cancel'])) {

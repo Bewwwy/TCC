@@ -17,12 +17,9 @@
     ?>
 
     <header>
-        <h1>Faça sua doação</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare lacinia felis, id dictum eros malesuada
-            vitae. Donec bibendum pellentesque odio semper placerat.
-            Vivamus eget quam at lectus feugiat ultrices. Morbi eget tortor nisi. Nunc auctor porta venenatis. Proin sit
-            amet porta metus. Maecenas varius placerat nulla, id porta
-            tortor consequat ac.</h3>
+        <h1>Faça sua doação!</h1>
+        <h3>Está pagina permite que você faça doações financeira para contribuir 
+            com os animais abandonados.</h3>
     </header>
 
     <main class="content">
