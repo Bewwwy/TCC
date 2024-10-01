@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgb(190, 137, 137);
+    background-color: rgb(240, 204, 214);
 }
 
 .cad-adm {
@@ -25,8 +25,9 @@ body {
     height: fit-content;
     width: fit-content;
     padding: 10vh 5vw 15vh 5vw;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     background-color: white;
+    border-radius: 8px;
     box-shadow: 0 20px 15px rgba(0, 0, 0, .25);
     /* max-height: 100vh; 
     height: 80vh;

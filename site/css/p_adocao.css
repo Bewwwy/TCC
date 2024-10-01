@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(214, 144, 159);
+    background-color: rgb(240, 204, 214);
 }
 
 .container {
@@ -74,10 +74,11 @@ h1 {
 }
 
 .row {
+    background-color: rgb(240, 204, 214);
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
     border-bottom: 1px rgb(168, 168, 168) solid;
+    border-radius: 8px 8px 0 0;
 }
 
 #pet {
