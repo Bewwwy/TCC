@@ -72,7 +72,7 @@ p {
 
 /* botao cancelar */
 #canc {
-    background-color: rgb(109, 186, 54);
+    background-color: rgb(75, 146, 24);
     width: 9rem;
     max-width: 100vw;
     padding: .7rem;
@@ -84,7 +84,7 @@ p {
 }
 
 #canc:hover {
-    background-color: rgb(147, 206, 106);
+    background-color: rgb(117, 189, 65);
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
 }

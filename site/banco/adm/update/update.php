@@ -9,12 +9,12 @@ require_once 'update_view.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/editar_adm.css">
+    <link rel="stylesheet" href="../../../css/c_adm.css">
     <title>Editar ADM</title>
 </head>
 <body>
 
-    <div class="editar-adm">
+    <div class="cad-adm">
         <h1>Editar ADM</h1>
 
         
@@ -41,7 +41,7 @@ require_once 'update_view.php';
                 echo "<label for 'nova_senha'>Nova senha</label>";
                 echo "<input type='hidden' name='user' value='". $row['user']."'>";
                 echo "<input type='password' name='senha' placeholder='Nova senha' required>";
-                echo "<button type='submit' class='btnedit' name='edit'>Editar</button>";
+                echo "<button type='submit' id='btn' name='edit'>Editar</button>";
             }
             ?>
             <a href="../../../pages/CRUDADMs.php">Voltar à página de ADMs</a>
