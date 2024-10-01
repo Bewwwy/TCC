@@ -90,13 +90,16 @@ header {
     background-color: var(--l_grey);
 }
 
+#org {
+    margin-top: 1em;
+}
+
 h1, h3 {
     font-weight: bolder;
 }
 
 h1 {
     font-size: large;
-    margin-top: 1em;
 }
 
 img {

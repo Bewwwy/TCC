@@ -140,6 +140,8 @@ input:focus, textarea:focus {
 textarea {
     text-align: left;
     padding: 1rem;
+    min-width: 45vw;
+    min-height: 25vh;
     max-width: 45vw;
     max-height: 25vh;
     background-color: rgb(238, 238, 238);

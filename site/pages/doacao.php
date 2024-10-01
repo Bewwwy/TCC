@@ -33,7 +33,7 @@
         </div>
 
         <div class="outro">
-            <h1>Outras organizações</h1>
+            <h1 id="org">Outras organizações</h1>
             <div class="banco2">
                     <h3>Nome da ONG</h3>
                     <h3>PIX:</h3>
