@@ -33,7 +33,7 @@ function input_cadastro() {
     }
 
     echo '<label for="foto">Foto</label>
-    <input id="fotinha" type="file" name="foto" accept=".jpeg, .jpg, .png">';
+    <input id="imagem" type="file" name="foto" accept=".jpeg, .jpg, .png">';
 
     if (isset($_SESSION["signup_data"]["idade"])){
         echo '<label for="idade">Insira a idade do animal em anos*</label>

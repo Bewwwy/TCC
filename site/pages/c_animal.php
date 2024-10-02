@@ -12,7 +12,7 @@ require_once '../banco/animal/c_animal_view.php';
     <title>Cadastrar Animal</title>
 </head>
 <body>
-    <div class="cad-animal">
+    <section class="cad-animal">
         <h1>Cadastrar Animal</h1>
         <form action="../banco/animal/c_animalhandler.php" method="post" enctype="multipart/form-data">
         <!-- <label for="nome_pet">Nome do animal</label>
@@ -36,10 +36,11 @@ require_once '../banco/animal/c_animal_view.php';
 
         <?php 
         input_cadastro();
-        ?><button type="submit">Cadastrar</button>
+        ?>
+        <button id="btn" type="submit">Cadastrar</button>
         </form>
         
-    </div>
+    </section>
     <?php
 
     check_erros_cadastro();
