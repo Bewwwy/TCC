@@ -40,12 +40,12 @@ require_once '../banco/conexao.php';
                 
                 foreach($result as $row) {
                     echo "<tr>";
-                    echo "<td>". $row['ID_adm'] . "</td>";
-                    echo "<td>". $row['nome'] . "</td>";
-                    echo "<td>". $row['user'] . "</td>";
-                    echo "<td><p>****************</p></td>";
-                    echo "<td><a href='../banco/adm/update/update.php?id=". $row['ID_adm'] ."'>Editar</a></td>";
-                    echo "<td><a href='../banco/adm/delete/deletehandler.php?id=". $row['ID_adm'] ."'>Excluir</a></td>";
+                    echo "<td data-label='ID'>". $row['ID_adm'] . "</td>";
+                    echo "<td data-label='Nome'>". $row['nome'] . "</td>";
+                    echo "<td data-label='Usuário'>". $row['user'] . "</td>";
+                    echo "<td data-label='Senha'><p>****************</p></td>";
+                    echo "<td data-label='Editar'><a id='btn-edit' href='../banco/adm/update/update.php?id=". $row['ID_adm'] ."'>Editar</a></td>";
+                    echo "<td data-label='Excluir'><a id='btn-del' href='../banco/adm/delete/deletehandler.php?id=". $row['ID_adm'] ."'>Excluir</a></td>";
                     echo"</tr>"; 
                 }
             ?>

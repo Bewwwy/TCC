@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-* {
+/* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,10 +24,10 @@ body {
 
 .adm {
     background-color: white;
-    width: 30vw;
-    height: 50vh;
-    width: fit-content;
-    height: fit-content;
+    width: 50%;
+    height: 50%;
+    max-width: 100%;
+    min-height: 100%;
     padding: 4vh 3vw;
     display: flex;
     flex-direction: column;
@@ -59,6 +59,11 @@ a {
 .tableADM {
     border: 2em;
     margin: 2rem;
+    width: 50%;
+    height: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    table-layout: fixed;
     font-size: 0.9em;
     min-width: 400px;
     border: 1px solid;
@@ -108,4 +113,184 @@ thead {
 
 @media screen and (max-width: 500px) {
     
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(240, 204, 214);
+}
+
+.adm {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    padding: 4vh 3vw;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: sans-serif;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: x-large;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    margin: 1vh 1vw;
+}
+
+#novo {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1em;
+    padding: 1.5vh 1.5vw;
+    text-decoration: none;
+}
+
+#novo:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: ease 0.3s;
+}
+
+#voltar {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+#voltar:hover {
+    color: rgb(99, 99, 99);
+    transition: ease 0.3s;
+}
+
+p {
+    /* white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    overflow-wrap: break-word;
+}
+
+#btn-edit {
+    color: blue;
+}
+
+#btn-del {
+    color: red;
+}
+
+.tableADM {
+    width: 100%;
+    width: 50%;
+    height: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.tableADM td, .tableADM th {
+    /* white-space: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis; */
+    overflow-wrap: break-word;
+    padding: 20px 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tableADM th {
+    background-color: rgb(240, 204, 214);
+    color: black;
+    /* padding: 1vh 2vw; */
+}
+
+.tableADM tbody tr:nth-child(even) {
+    background-color: rgba(180, 180, 180, 0.534);
+}
+
+@media(max-width: 700px) {
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        white-space: none;
+        overflow: none;
+        text-overflow: none;
+    }
+    
+    .tableADM thead {
+        display: none;
+    }
+
+    .tableADM, .tableADM tbody, .tableADM tr, .tableADM td {
+        display: block;
+        width: 100%;
+        overflow: none;
+        text-overflow: none;
+        white-space: none;
+    }
+
+    .tableADM tr {
+        margin-bottom: 15px;
+        overflow: none;
+        text-overflow: none;
+        white-space: none;
+    }
+
+    .tableADM td {
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+        overflow: none;
+        text-overflow: none;
+        white-space: none;
+    }
+    .tableADM td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
 }

@@ -42,14 +42,14 @@ require_once '../banco/conexao.php';
                 
                 foreach($result as $row) {
                     echo "<tr>";
-                    echo "<td>". $row['ID_pet'] . "</td>";
-                    echo "<td>". $row['nome_pet'] . "</td>"; ?>
-                    <td><img src='../uploads/<?php echo $row['foto']?>'></td><?php
-                    echo "<td>". $row['idade'] . "</td>";
-                    echo "<td>". $row['sexo'] . "</td>";
-                    echo "<td>". $row['descr'] . "</td>";
-                    echo "<td><a href='../banco/animal/update/update.php?id=". $row['ID_pet'] ."'>Editar</a></td>";
-                    echo "<td><a href='../banco/animal/delete/deletehandler.php?id=". $row['ID_pet'] ."'>Excluir</a></td>";
+                    echo "<td data-label='ID_pet'>". $row['ID_pet'] . "</td>";
+                    echo "<td data-label='Nome do pet'>". $row['nome_pet'] . "</td>"; ?>
+                    <td data-label='Foto'><img src='../uploads/<?php echo $row['foto']?>'></td><?php
+                    echo "<td data-label='Idade'>". $row['idade'] . "</td>";
+                    echo "<td data-label='Sexo'>". $row['sexo'] . "</td>";
+                    echo "<td data-label='Descrição'>". $row['descr'] . "</td>";
+                    echo "<td data-label='Editar'><a id='btn-edit' href='../banco/animal/update/update.php?id=". $row['ID_pet'] ."'>Editar</a></td>";
+                    echo "<td data-label='Excluir'><a id='btn-del' href='../banco/animal/delete/deletehandler.php?id=". $row['ID_pet'] ."'>Excluir</a></td>";
                     echo"</tr>"; 
                 }
             ?>
