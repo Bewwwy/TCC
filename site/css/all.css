@@ -15,10 +15,9 @@
     text-align: center;
 }
 :root {
-    --black: black;
     --grey: grey;
     --white: white;
-    --l_grey: rgb(236, 236, 236);
+    --l_grey: #F0F3F7;
 }
 
 header {

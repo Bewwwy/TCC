@@ -26,7 +26,7 @@ footer {
     margin-top: 2vh;
     font-size: 1.2rem;
     text-align: justify;
-    color: rgb(221, 221, 221);
+    color: white;
     line-height: 1.5;
 }
 
@@ -47,11 +47,11 @@ footer {
 .col ul li {
     text-align: left;
     font-size: 1.3rem;
-    color: rgb(221, 221, 221);
+    color: white;
     margin-top: .5rem;
 }
 .col ul li a {
-    color: rgb(221, 221, 221);
+    color: white;
 }
 .col ul li a:hover {
     color: rgb(0, 0, 0);

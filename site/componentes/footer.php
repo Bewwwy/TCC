@@ -4,8 +4,7 @@ echo
         <div class="container">
             <div class="intro">
                 <h4>Patas & Amigos</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis sodales sit amet, 
-                tincidunt nec mi. Vivamus sed scelerisque ex. Aenean vitae malesuada urna.</p>
+                <p>Todo animalzinho merece um lar. Faça a diferença!</p>
             </div>
             <div class="col">
                 <h4>Links rápidos</h4>

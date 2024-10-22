@@ -4,7 +4,7 @@ header {
     padding-bottom: 18vh;
 }
 .content {
-    background-color: rgb(226, 226, 226);
+    background-color: var(--l_grey);
 }
 
 h1 {

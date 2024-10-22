@@ -26,22 +26,22 @@ declare(strict_types=1);
 function input_cadastro() {
     if (isset($_SESSION["signup_data"]["nome_pet"])) {
         echo '<label for="nome_pet">Nome do animal</label>
-        <input type="text" name="nome_pet" placeholder="Nome do animal" value="'. $_SESSION["signup_data"]["nome_pet"].'">';
+        <input type="text" name="nome_pet" id="lb1" placeholder="Nome do animal" value="'. $_SESSION["signup_data"]["nome_pet"].'">';
     } else {
         echo '<label for="nome_pet">Nome do animal</label>
         <input type="text" name="nome_pet" id="lb1" placeholder="Nome do animal">';
     }
 
-    echo '<label for="foto">Foto</label>
-    <input id="imagem" type="file" name="foto" accept=".jpeg, .jpg, .png">';
-
     if (isset($_SESSION["signup_data"]["idade"])){
         echo '<label for="idade">Insira a idade do animal em anos*</label>
-        <input type="number" name="idade" placeholder="Idade em anos" min="0" value="'.$_SESSION["signup_data"]["idade"].'">';
+        <input type="number" name="idade" id="lb2" placeholder="Idade em anos" min="0" value="'.$_SESSION["signup_data"]["idade"].'">';
     } else {
         echo '<label for="idade">Insira a idade do animal em anos inteiros*</label>
         <input type="number" name="idade" id="lb2" min="0" value="0">';
     }
+
+    echo '<label for="foto">Foto</label>
+    <input id="imagem" type="file" name="foto" accept=".jpeg, .jpg, .png">';
 
     echo '<label for="sexo">Sexo</label>
     <select name="sexo" >

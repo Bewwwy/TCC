@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 nav {
     background-color: rgb(240, 204, 214);
     height: 100%;
@@ -12,15 +14,15 @@ nav {
     align-items: center;
 }
 
-#home {
-    color: black;
-    font-size: x-large;
-}
-
 .logo {
     height: 9vh;
     margin: .8vh 1vw .8vh 2vw;
     cursor: pointer;
+}
+
+#home {
+    color: black;
+    font-size: x-large;
 }
 
 .nav_links {
@@ -28,22 +30,28 @@ nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2.2vh 0 2.2vh 0;
-    margin: 0 2vw;
+    /* padding: 4vh 0; */
+    /* margin: 0 2vw; */
 }
 
 .nav_links li {
-    /* background-color: pink; */
-    margin: 0 4vw;
+    /* background-color: orange; */
+    padding: 4.5vh 4vw;
+    transition: 0.4s ease;
 }
 
-.nav_links li a {
+.nav_links a {
     color: black;
-    transition-duration: 0.5s;
+    /* transition-duration: 0.5s; */
+    font-family: "Lato", sans-serif;
 }
 
-.nav_links li a:hover {
+.nav_links a:hover{
     color: rgb(255, 255, 255);
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
 }
 
+.nav_links a:hover li {
+    cursor: pointer;
+    background-color: rgb(133, 48, 73);
+}
