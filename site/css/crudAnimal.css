@@ -131,13 +131,15 @@ body {
 
 .tani {
     display: flex;
-    width: 50%;
-    height: 50%;
+    width: 65%;
+    height: 65%;
+    max-width: 100%;
+    height: auto;
     padding: 4vh 3vw;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
+    /* align-content: center; */
+    /* justify-content: center; */
     font-family: sans-serif;
     border: 1px solid black;
     border-radius: 7px;
@@ -195,11 +197,11 @@ img {
 }
 
 p {
-    /* white-space: nowrap;
+    white-space: nowrap;
     width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis; */
-    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    /* overflow-wrap: break-word; */
 }
 
 #btn-edit {
@@ -241,6 +243,10 @@ p {
 }
 
 @media(max-width: 700px) {
+    .tani {
+        width: 90%;
+    }
+    
     h1 {
         text-align: center;
     }
@@ -249,17 +255,12 @@ p {
         text-align: center;
     }
 
-    p {
-        white-space: none;
-        overflow: none;
-        text-overflow: none;
+    #novo {
+        text-align: center;
     }
     
     .tableAnimal thead {
         display: none;
-        overflow: none;
-        text-overflow: none;
-        white-space: none;
     }
 
     .tableAnimal, .tableAnimal tbody, .tableAnimal tr, .tableAnimal td {
@@ -276,9 +277,9 @@ p {
         padding-left: 50%;
         text-align: right;
         position: relative;
-        overflow: none;
+        /* overflow: none;
         text-overflow: none;
-        white-space: none;
+        white-space: none; */
     }
     .tableAnimal td::before {
         content: attr(data-label);

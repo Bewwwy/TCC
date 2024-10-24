@@ -40,7 +40,7 @@ require_once 'update_view.php';
                 echo "<input type='text' name='user' value='". $row['user']."' disabled>";
                 echo "<label for 'nova_senha'>Nova senha</label>";
                 echo "<input type='hidden' name='user' value='". $row['user']."'>";
-                echo "<input type='password' name='senha' placeholder='Nova senha' required>";
+                echo "<input type='password' name='senha' placeholder='senha' required>";
                 echo "<button type='submit' id='btn' name='edit'>Editar</button>";
             }
             ?>

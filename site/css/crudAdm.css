@@ -137,8 +137,8 @@ body {
 
 .adm {
     display: flex;
-    width: 50%;
-    height: 50%;
+    width: 65%;
+    height: 65%;
     padding: 4vh 3vw;
     flex-direction: column;
     align-items: center;
@@ -193,11 +193,11 @@ a {
 }
 
 p {
-    /* white-space: nowrap;
+    white-space: nowrap;
     width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis; */
-    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    /* overflow-wrap: break-word; */
 }
 
 #btn-edit {
@@ -219,11 +219,11 @@ p {
 }
 
 .tableADM td, .tableADM th {
-    /* white-space: nowrap;
+    white-space: nowrap;
     width: 100%;
     overflow-x: hidden;
-    text-overflow: ellipsis; */
-    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    /* overflow-wrap: break-word; */
     padding: 20px 10px;
     border: 1px solid black;
     text-align: center;
@@ -241,6 +241,10 @@ p {
 }
 
 @media(max-width: 700px) {
+    .adm {
+        width: 100%;
+    }
+
     h1 {
         text-align: center;
     }
@@ -249,10 +253,8 @@ p {
         text-align: center;
     }
 
-    p {
-        white-space: none;
-        overflow: none;
-        text-overflow: none;
+    #novo {
+        text-align: center;
     }
     
     .tableADM thead {
@@ -265,13 +267,14 @@ p {
         overflow: none;
         text-overflow: none;
         white-space: none;
+        /* overflow-wrap: break-word; */
     }
 
     .tableADM tr {
         margin-bottom: 15px;
-        overflow: none;
+        /* overflow: none;
         text-overflow: none;
-        white-space: none;
+        white-space: none; */
     }
 
     .tableADM td {
@@ -279,9 +282,6 @@ p {
         padding-left: 50%;
         text-align: right;
         position: relative;
-        overflow: none;
-        text-overflow: none;
-        white-space: none;
     }
     .tableADM td::before {
         content: attr(data-label);
