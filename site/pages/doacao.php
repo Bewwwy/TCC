@@ -35,7 +35,7 @@
         <div class="outro">
             <h1 id="org">Outras organizações</h1>
             <div class="banco2">
-                    <h3>Nome da ONG</h3>
+                    <h3>ONG: Dona Zuleika</h3>
                     <h3>PIX:</h3>
                     <h3>Nome:</h3>
                     <img src="../images/qrcode.jpg" alt="qrcode">
