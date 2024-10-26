@@ -11,15 +11,15 @@
     list-style: none;
     text-decoration: none;
     border: none;
+    text-align: center;
 }
 
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
+    min-height: 100vh;
     background-color: rgb(240, 204, 214);
 }
 
@@ -29,6 +29,7 @@ body {
     max-width: 97vw;
 }
 
+/* Botão de voltar */
 #vol {
     background-color: rgb(189, 58, 100);
     color: white;
@@ -50,6 +51,8 @@ body {
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+/* Atualização */
 .info-animal {
     position: relative;
     max-width: 98vw;
@@ -75,90 +78,8 @@ body {
     flex-direction: column;
 }
 
-#f_pet {
-    width: 30rem;
-    align-self: center;
-    margin-top: 2rem;
-}
 
-#change {
-    align-self: center;
-    margin-top: 1rem;
-}
-
-#change:hover {
-    color: rgb(189, 58, 100);
-}
-
-form label {
-    margin-top: 25px;
-    color: black;
-}
-
-form #lb1, #lb2{
-    background-color: rgb(241, 241, 241);
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    outline: none;
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 6px;
-    padding: 0 15px;
-    font-size: 1rem;
-    color: rgb(78, 78, 78);
-    transition: 0.1s ease-out;
-}
-
-input[type="file"] {
-    border: none;
-}
-
-input:focus {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgb(189, 58, 100);
-    transition: 0.2s ease-in;
-}
-
-form .column {
-    display: flex;
-    flex-direction: row;
-    column-gap: 15px;
-}
-
-#lb3 {
-    background-color: rgb(241, 241, 241);
-    position: relative;
-    height: 50px;
-    width: 8rem;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    outline: none;
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 6px;
-    padding: 0 15px;
-    font-size: 1rem;
-    color: rgb(78, 78, 78);
-    transition: 0.1s ease-out;
-}
-
-#msg {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 8px;
-    text-align: left;
-    padding: 1rem;
-    min-height: 10vh;
-    max-height: 25vh;
-    background-color: rgb(238, 238, 238);
-    border-radius: 5px;
-    border: 1.5px solid rgb(206, 206, 206);
-    font-size: 1rem;
-    color: rgb(78, 78, 78);
-    text-align: justify;
-}
-
+/* Botão */
 form #btn {
     height: 55px;
     width: 100%;
@@ -177,6 +98,7 @@ form #btn:hover, #vol:hover {
     background-color: rgb(223, 99, 138);
 }
 
+/* Tela */
 @media screen and (max-width: 500px) {
     form .column {
         flex-wrap: wrap;

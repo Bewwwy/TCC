@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/doa.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Doação</title>
 </head>
 

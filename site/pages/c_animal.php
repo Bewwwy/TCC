@@ -9,6 +9,7 @@ require_once '../banco/animal/c_animal_view.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/c_animal.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Cadastrar Animal</title>
 </head>
 <body>

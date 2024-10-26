@@ -12,32 +12,34 @@ $id = $_GET['id'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/u_f_animal.css">
     <title>Editar animal</title>
 </head>
 <body>
-    <h1>Atualizar foto</h1>
+    <div class="container">
+        <a id="vol" href="update.php?id=<?php echo$id; ?>"><img src="../../../images/back.png" alt="voltar símbolo"><p>Voltar</p></a>
+        <div class="info-animal">
+            <h1>Atualizar foto</h1>
 
-    <a href="../../../pages/CRUDanimais.php">Voltar à página de animais</a>
+            <form action="update_fotohandler.php" method="post" enctype="multipart/form-data">
 
-    <form action="update_fotohandler.php" method="post" enctype="multipart/form-data">
+                <?php 
+                    echo "<input type='hidden' name='ID_pet' value='". $id ."'>";
+                ?>
 
-        <?php 
-            echo "<input type='hidden' name='ID_pet' value='". $id ."'>";
-        ?>
+                <!-- foto -->
+                <input type="file" name="foto" accept=".jpeg, .jpg, .png" required>
 
-        <!-- foto -->
-        <label for="foto">Foto</label>
-        <input type="file" name="foto" accept=".jpeg, .jpg, .png" required>
+                <button type='submit' id='btn' name='edit'>Atualizar</button>
 
-        <button type="submit">Atualizar</button>
+            </form>
 
-    </form>
+            <?php
 
-    <?php
+            check_erros_update();
 
-    check_erros_update();
-
-    ?>
-    
+            ?>
+        </div>
+    </div>
 </body>
 </html>

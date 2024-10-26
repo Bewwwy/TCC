@@ -11,6 +11,7 @@ require_once '../banco/create_default.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Login</title>
 </head>
 <body>
@@ -27,7 +28,7 @@ require_once '../banco/create_default.php';
             </div>
             
             <button id="btnadm">Entrar</button>
-            <a href="../index.html">Voltar para à Home</a>
+            <a href="../index.php">Voltar para a Home</a>
         </form>
     </div>
     <?php

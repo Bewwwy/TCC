@@ -1,3 +1,9 @@
+<?php
+require_once 'banco/config_session.php';
+require_once 'banco/conexao.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,12 +14,13 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Home</title>
 </head>
 
 <body>
     <nav>
-        <a id="home" href="./index.html"><img class="logo" src="images/logo.svg" alt="logo"><p>Patas & Amigos</p></a>
+        <a id="home" href="./index.php"><img class="logo" src="images/logo.svg" alt="logo"><p>Patas & Amigos</p></a>
         <ul class="nav_links">
             <a href="./pages/animais.php"><li>Animais</li></a>
             <a href="./pages/direitos_deveres.php"><li>Direitos e deveres</li></a>
@@ -53,29 +60,31 @@
         </section>
 
         <section class="b">
-            <article class="column">
-                <figure><img src="images/gatos.jpg" alt="gatos"></figure>
-                <h2>Nome</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
+            <section class="animais">
+                
+                <?php
+                    $query = "SELECT * FROM tb_animal  ORDER BY ID_pet LIMIT 4;";
 
-            <article class="column">
-                <figure><img src="images/gatos.jpg" alt="gatos"></figure>
-                <h2>Nome</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
+                    $stmt = $pdo->prepare($query);
+                    $stmt->execute();
+                    
+                    $result = $stmt->fetchAll();
+                    
+                    
+                    foreach($result as $row) {
 
-            <article class="column">
-                <figure><img src="images/gatos.jpg" alt="gatos"></figure>
-                <h2>Nome</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque lectus, interdum quis
-                    sodales sit amet, tincidunt nec mi. Vivamus sed scelerisque ex. Aenean
-                    vitae malesuada urna. Donec in suscipit ante. Ut et fringilla dui.</p>
-            </article>
+                        echo '<div class="animal">';
+                        echo "<a href='pages/informacoes_animal.php?id=". $row['ID_pet'] ."'>";
+                        ?>
+                        
+                        <figure class="an"><img src='uploads/<?php echo $row['foto']?>' id="f_a" alt="animal"></figure><?php
+                        echo "<h2>". $row['nome_pet']. "</h2>";
+                        echo "<p class='descr'>". $row['descr']. "</p>";
+                        echo "</a></div>";
+                    }
+                ?>
+            </section>
+            <a href="pages/animais.php" id='link'>Ver mais animais</a>
         </section>
     </main>
 

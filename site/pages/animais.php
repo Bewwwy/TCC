@@ -13,6 +13,7 @@ require_once '../banco/conexao.php';
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/animais.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Animais</title>
 </head>
 <body>
@@ -29,7 +30,7 @@ require_once '../banco/conexao.php';
     </header>
 
     <main class="content">
-        <section class="a">
+        <section class="animais">
 
 
 

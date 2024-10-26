@@ -9,7 +9,7 @@ echo
             <div class="col">
                 <h4>Links rápidos</h4>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li><a href="../pages/animais.php">Animais</a></li>
                     <li><a href="../pages/direitos_deveres.php">Direitos e deveres</a></li>
                     <li><a href="../pages/doacao.php">Doações</a></li>

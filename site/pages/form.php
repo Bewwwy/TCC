@@ -13,6 +13,7 @@ require_once '../banco/msg/msg_view.php';
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Formulário de contato</title>
 </head>
 <body>

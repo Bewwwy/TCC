@@ -10,12 +10,13 @@ require_once 'update_view.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../css/u_animal.css">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
     <title>Editar animal</title>
 </head>
 <body>
     <div class="container">
         <a id="vol" href="../../../pages/CRUDanimais.php"><img src="../../../images/back.png" alt="voltar símbolo"><p>Voltar</p></a>
-        <section class="cad-animal">
+        <section class="info-animal">
             <h1>Editar animal</h1>
 
             <form action="updatehandler.php" method="post">

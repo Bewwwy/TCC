@@ -14,7 +14,7 @@ $id = $_GET['id'];
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/info_animal.css">
-    
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Informações do animal</title>
 </head>
 <body>
