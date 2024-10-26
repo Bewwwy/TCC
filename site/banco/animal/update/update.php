@@ -9,75 +9,75 @@ require_once 'update_view.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/u_animal.css">
     <title>Editar animal</title>
 </head>
 <body>
-    <h1>Editar animal</h1>
+    <div class="container">
+        <a id="vol" href="../../../pages/CRUDanimais.php"><img src="../../../images/back.png" alt="voltar símbolo"><p>Voltar</p></a>
+        <section class="cad-animal">
+            <h1>Editar animal</h1>
 
-    <a href="../../../pages/CRUDanimais.php">Voltar à página de animais</a>
+            <form action="updatehandler.php" method="post">
+            <?php
+                $query = "SELECT * FROM tb_animal WHERE ID_pet= :id;";
 
-    <form action="updatehandler.php" method="post">
-    <?php
-        $query = "SELECT * FROM tb_animal WHERE ID_pet= :id;";
-
-        $stmt = $pdo->prepare($query);
-        $stmt->bindParam(":id", $_GET['id']);
-        $stmt->execute();
-        
-        $result = $stmt->fetchAll();
+                $stmt = $pdo->prepare($query);
+                $stmt->bindParam(":id", $_GET['id']);
+                $stmt->execute();
+                
+                $result = $stmt->fetchAll();
 
 
 
-        // echo "<form action='?update=salvar' method='POST'>";
+                // echo "<form action='?update=salvar' method='POST'>";
 
-        foreach($result as $row) {
-            //id pet
-            echo "<input type='hidden' name='ID_pet' value='". $row['ID_pet'] ."'>";
+                foreach($result as $row) {
+                    //id pet
+                    echo "<input type='hidden' name='ID_pet' value='". $row['ID_pet'] ."'>";
 
-            // nome pet
-            echo "<label for'nome'>Nome do pet</label>";
-            echo "<input type='text' name='nome_pet' value='". $row['nome_pet']."'>";
+                    // nome pet
+                    echo "<label for'nome'>Nome do pet</label>";
+                    echo "<input type='text' name='nome_pet' id='lb1' value='". $row['nome_pet']."' maxlength='30'>";
 
-            // mostra a foto
-            echo "<label for'foto'>Foto</label>";
+                    // mostra a foto
+                    ?>
+                        <img src='../../../uploads/<?php echo $row['foto']?>' id='f_pet'><?php
+                    echo "<a href='./update_foto.php?id=". $_GET['id']  ."' id='change'>Mudar foto</a>";
+
+                    // idade
+                    echo "<label for'idade'>Idade</label>";
+                    echo "<input type='number' name='idade' id='lb2' value='". $row['idade'] ."' min='1' max='99' >";
+
+                    // sexo
+                    echo "<label for'sexo'>Sexo</label>";
+                    echo "<select name='sexo' id='lb3'>
+                    <option selected='selected'>". $row['sexo']."</option>";
+                    if($row['sexo'] == 'Masculino') {
+                        echo "<option value='Feminino'>Feminino</option></select>";
+                    } else {
+                        echo "<option value='Masculino'>Masculino</option></select>";
+                    }
+
+                    // descrição
+                    echo "<label for'descr'>Descrição</label></a>";
+                    echo "<textarea name='descr' id='msg'>". $row['descr'] ."</textarea>";
+                    echo "<p id='result'></p>";
+
+
+                    echo "<button type='submit' id='btn' name='edit'>Editar</button>";
+                }
             ?>
-                 <img src='../../../uploads/<?php echo $row['foto']?>'><?php
+            </form>
 
-            // idade
-            echo "<label for'idade'>Idade</label>";
-            echo "<input type='text' name='idade' value='". $row['idade'] ."' >";
+            <script src="../../../js/limit.js"></script>
 
-            // sexo
-            echo "<label for'sexo'>Sexo</label>";
-            echo "<select name='sexo'>
-            <option value='Masculino'>Masculino</option>
-            <option value='Feminino'>Feminino</option></select>";
+            <?php
 
-            // descrição
-            echo "<label for'Descricao'>Descrição</label>";
-            echo "<textarea name='descr'>". $row['descr'] ."</textarea>";
-            echo "<p id='result'>0/700</p>";
+            check_erros_update();
 
-
-            echo "<button type='submit' class='btnedit' name='edit'>Editar</button>";
-        }
-    ?>
-    </form>
-
-    <script src="../../../js/limit.js"></script>
-
-    <?php
-
-    check_erros_update();
-
-    ?>
-
-    <div class="nova_foto">
-        <?php 
-            echo "<a href='./update_foto.php?id=". $_GET['id']  ."'>Mudar foto</a>";
-        ?>
+            ?>
+        </section>
     </div>
-
-    
 </body>
 </html>

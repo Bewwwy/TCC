@@ -55,13 +55,19 @@ h1 {
     text-align: left;
     border-radius: 10px;
 }
+
 #vol img {
     filter: invert(100%);
 }
+
 #vol p {
     margin-left: 1.2rem;
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+#vol:hover {
+    background-color: rgb(223, 99, 138);
 }
 
 .infos {
