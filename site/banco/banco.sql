@@ -50,11 +50,3 @@ CREATE TABLE tb_msg (
     msg VARCHAR(700) NOT NULL,
     PRIMARY KEY (ID_msg)
 );
-
--- INSERT INTO tb_adm (nome, user, senha) VALUES (
---     'adm',
---     'ADM',
---     '$2y$12$QE/iAtRiMgdRt4pEi0M4Lu3UWThHOoN79Nh8LElzjFwE9L7bDXDsC'
--- );
-
--- ALTER TABLE tb_adm MODIFY COLUMN senha VARCHAR(255);
