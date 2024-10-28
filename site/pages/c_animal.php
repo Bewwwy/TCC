@@ -8,6 +8,7 @@ require_once '../banco/animal/c_animal_view.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../css/c_animal.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Cadastrar Animal</title>
@@ -39,6 +40,7 @@ require_once '../banco/animal/c_animal_view.php';
         input_cadastro();
         ?>
         <button id="btn" type="submit">Cadastrar</button>
+        <a id=voltar href="CRUDanimais.php">Voltar</a>
         </form>
         
     </section>
@@ -48,7 +50,7 @@ require_once '../banco/animal/c_animal_view.php';
 
     ?>
 
-    <a href="CRUDanimais.php">Voltar</a>
+    
     <script src="../js/limit.js"></script>
 </body>
 </html>

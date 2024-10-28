@@ -40,11 +40,11 @@ function input_cadastro() {
         <input type="number" name="idade" id="lb2" min="0" value="0">';
     }
 
-    echo '<label for="foto">Foto</label>
-    <input id="imagem" type="file" name="foto" accept=".jpeg, .jpg, .png">';
+    echo '<label for="foto" id="imagem">Mudar Foto</label>
+    <input id="foto" name="foto" type="file" accept=".jpeg, .jpg, .png">';
 
     echo '<label for="sexo">Sexo</label>
-    <select name="sexo" >
+    <select id="lb3" name="sexo" >
     <option hidden value=""></option>
     <option value="Masculino">Masculino</option>
     <option value="Feminino">Feminino</option>

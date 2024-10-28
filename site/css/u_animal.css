@@ -90,6 +90,11 @@ body {
     color: rgb(189, 58, 100);
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 form label {
     margin-top: 25px;
     color: black;
@@ -121,11 +126,11 @@ input:focus {
     transition: 0.2s ease-in;
 }
 
-form .column {
+/* form .column {
     display: flex;
     flex-direction: row;
     column-gap: 15px;
-}
+} */
 
 #lb3 {
     background-color: rgb(241, 241, 241);
@@ -147,7 +152,6 @@ form .column {
     width: 100%;
     max-width: 100%;
     margin-top: 8px;
-    text-align: left;
     padding: 1rem;
     min-height: 10vh;
     max-height: 25vh;
@@ -157,6 +161,10 @@ form .column {
     font-size: 1rem;
     color: rgb(78, 78, 78);
     text-align: justify;
+}
+
+#result {
+    text-align: right;
 }
 
 form #btn {
