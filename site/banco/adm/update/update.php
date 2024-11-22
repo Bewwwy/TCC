@@ -36,11 +36,11 @@ require_once 'update_view.php';
             foreach($result as $row) {
                 echo "<input type='hidden' name='ID_adm' value='". $row['ID_adm'] ."'>";
                 echo "<label for 'nome'>Nome</label>";
-                echo "<input type='text' name='nome' placeholder='Novo nome' value='". $row['nome']."'>";
+                echo "<input type='text' name='nome' placeholder='Novo nome' value='". $row['nome']."' maxlength='50'>";
                 echo "<label for 'user'>Usuário</label>";
                 echo "<input type='text' name='user' value='". $row['user']."' disabled>";
                 echo "<label for 'nova_senha'>Nova senha</label>";
-                echo "<input type='hidden' name='user' value='". $row['user']."'>";
+                echo "<input type='hidden' name='user' value='". $row['user']."' maxlength='15'>";
                 echo "<input type='password' name='senha' placeholder='senha' required>";
                 echo "<button type='submit' id='btn' name='edit'>Editar</button>";
             }

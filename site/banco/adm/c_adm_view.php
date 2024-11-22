@@ -11,15 +11,15 @@ function input_cadastro() {
 
 
     if (isset($_SESSION["signup_data"]["nome"])) {
-        echo '<input type="text" name="nome" id="" placeholder="Nome" value="'. $_SESSION["signup_data"]["nome"] . '">';
+        echo '<input type="text" name="nome" id="" placeholder="Nome" value="'. $_SESSION["signup_data"]["nome"] . '" maxlength="50">';
     } else {
-        echo '<input type="text" name="nome" id="lb1" placeholder="Nome">';
+        echo '<input type="text" name="nome" id="lb1" placeholder="Nome" maxlength="50">';
     }
 
     if (isset($_SESSION["signup_data"]["user"]) && !isset($_SESSION["erros_cadastro"]["user_taken"])) {
-        echo '<input type="text" name="user" placeholder="Usuário" value="' . $_SESSION["signup_data"]["user"] .'">';
+        echo '<input type="text" name="user" placeholder="Usuário" value="' . $_SESSION["signup_data"]["user"] .'" maxlength="15">';
     } else {
-        echo '<input type="text" name="user" id="lb2" placeholder="Usuário">';
+        echo '<input type="text" name="user" id="lb2" placeholder="Usuário" maxlength="15">';
     }
     echo '<input type="password" name="senha" id="lb3" placeholder="Senha">';
 }

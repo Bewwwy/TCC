@@ -26,10 +26,10 @@ declare(strict_types=1);
 function input_cadastro() {
     if (isset($_SESSION["signup_data"]["nome_pet"])) {
         echo '<label for="nome_pet">Nome do animal</label>
-        <input type="text" name="nome_pet" id="lb1" placeholder="Nome do animal" value="'. $_SESSION["signup_data"]["nome_pet"].'">';
+        <input type="text" name="nome_pet" id="lb1" placeholder="Nome do animal" value="'. $_SESSION["signup_data"]["nome_pet"].'" maxlength="30">';
     } else {
         echo '<label for="nome_pet">Nome do animal</label>
-        <input type="text" name="nome_pet" id="lb1" placeholder="Nome do animal">';
+        <input type="text" name="nome_pet" id="lb1" placeholder="Nome do animal" maxlength="30">';
     }
 
     if (isset($_SESSION["signup_data"]["idade"])){
@@ -40,11 +40,11 @@ function input_cadastro() {
         <input type="number" name="idade" id="lb2" min="0" value="0">';
     }
 
-    echo '<label for="foto" id="imagem">Mudar Foto</label>
-    <input id="foto" name="foto" type="file" accept=".jpeg, .jpg, .png">';
+    echo '<label for="foto">Foto</label>
+    <input id="imagem" type="file" name="foto" accept=".jpeg, .jpg, .png">';
 
     echo '<label for="sexo">Sexo</label>
-    <select id="lb3" name="sexo" >
+    <select name="sexo" id="lb3">
     <option hidden value=""></option>
     <option value="Masculino">Masculino</option>
     <option value="Feminino">Feminino</option>
@@ -52,11 +52,11 @@ function input_cadastro() {
 
     if (isset($_SESSION["signup_data"]["descr"])) {
         echo '<label for="Descricao">Descrição</label>
-        <textarea id="desc" type="text" name="descr" placeholder="Descrição..." id="msg" value="'. $_SESSION["signup_data"]["descr"].'"></textarea>
+        <textarea type="text" name="descr" placeholder="Descrição..." id="msg">'. $_SESSION["signup_data"]["descr"].'</textarea>
         <p id="result">0/700</p>';
     } else {
         echo '<label for="Descricao">Descrição</label>
-        <input type="text" name="descr" placeholder="Descrição..." id="msg"></textarea>
+        <textarea name="descr" placeholder="Descrição..." id="msg"></textarea>
         <p id="result">0/700</p>';
     }
 }

@@ -19,8 +19,8 @@
 
     <header>
         <h1>Faça sua doação!</h1>
-        <h3>Está pagina permite que você faça doações financeira para contribuir 
-            com os animais abandonados.</h3>
+        <h3>Está pagina permite que você faça doações financeira para ajudar 
+            os animais abandonados.</h3>
     </header>
 
     <main class="content">
@@ -28,7 +28,6 @@
             <div class="text">
                 <h3>Nossa organização</h3>
                 <h3>PIX:</h3>
-                <h3>Nome:</h3>
             </div>
             <img id="qrcode1" src="../images/qrcode.jpg" alt="qrcode">
         </div>
@@ -38,7 +37,6 @@
             <div class="banco2">
                     <h3>ONG: Dona Zuleika</h3>
                     <h3>PIX:</h3>
-                    <h3>Nome:</h3>
                     <img src="../images/qrcode.jpg" alt="qrcode">
             </div>
         </div>

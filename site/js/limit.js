@@ -15,6 +15,6 @@ texto.addEventListener("input", function() {
     } else {
         texto.style.borderColor = "#b2b2b2";
         result.style.color = "#5a5a5a";
-        texto.style.color = "rgb(78, 78, 78)";
+        texto.style.color = "black";
     }
 });

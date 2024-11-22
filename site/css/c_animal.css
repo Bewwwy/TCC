@@ -1,125 +1,16 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(190, 137, 137);
-}
-
-.cad-animal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    width: fit-content;
-    max-width: 500%;
-    max-height: 500%;
-    height: 55%;
-    width: 30%;
-    padding: 25px;
-    border: 2px black solid;
-    background-color: white;
-    box-shadow: 0 20px 15px rgba(0, 0, 0, .25);
-}
-
-.cad-animal h1 {
-    margin-bottom: 1em;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; 
-}
-
-form label {
-    margin: 0 0 .5vh 0;
-}
-
-
- #lb1 {
-    margin-top: -0.5em;
-}
-
-#lb2 {
-    margin-top: -0.5em;
-}
-
-#lb3 {
-    margin-top: -0.5em;
-} 
-
-form input {
-    max-width: 100vw;
-    margin-bottom: 5vh;
-    padding: 0.5vh 0 0.5vh 0;
-    width: 25vw;
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
-    transition: 0.5s ease;
-}
-
-select {
-    margin-bottom: 3em;
-}
-
-#fotinha {
-    border: none;
-}
-
-#desc {
-    text-align: left;
-    padding: 1rem;
-    max-width: 45vw;
-    max-height: 25vh;
-    background-color: rgb(238, 238, 238);
-    border-radius: 5px;
-    border: 1.5px solid #b2b2b2;
-    text-align: justify;
-}
-
-input:focus {
-    border-bottom: 2px solid rgb(189, 58, 100);
-    transition: 0.1s ease-in;
-}
-
- .row {
-    display: flex;
-    flex-direction: row;
-} 
-
-#btn {
-    margin: 4vh 0 2vh 0;
-    padding: 1vh 0 1vh 0;
-    max-width: 100vw;
-    min-width: 10vw;
-    width: 15vw;
-    border-radius: 5px;
-    background-color: rgb(189, 58, 100);
-    border: none;
-}
-
-#btn:hover {
-    transition: 0.3s ease-in;
-    transform: scale(1.1);
-    cursor: pointer;
-} */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-size: inherit;
     font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
 }
 
 body {
@@ -132,7 +23,34 @@ body {
     background-color: rgb(240, 204, 214);
 }
 
- .cad-animal {
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 97vw;
+}
+
+#vol {
+    background-color: rgb(189, 58, 100);
+    color: white;
+    width: 20rem;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    margin: 2vh 0;
+    padding: .5rem;
+    text-align: left;
+    border-radius: 10px;
+}
+#vol img {
+    filter: invert(100%);
+    max-width: 2rem;
+}
+#vol p {
+    margin-left: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.info-animal {
     position: relative;
     max-width: 98vw;
     width: 60rem;
@@ -143,18 +61,33 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.cad-animal h1 {
+.info-animal h1 {
     font-size: 1.5rem;
-    margin-bottom: 2em;
+    margin: 1em;
     color: black;
     font-weight: 500;
     text-align: center;
 }
 
-.cad-animal form {
+.info-animal form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+}
+
+#f_pet {
+    width: 30rem;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+#change {
+    align-self: center;
+    margin-top: 1rem;
+}
+
+#change:hover {
+    color: rgb(189, 58, 100);
 }
 
 form label {
@@ -162,8 +95,7 @@ form label {
     color: black;
 }
 
-
-#lb1, #lb2{
+form #lb1, #lb2{
     background-color: rgb(241, 241, 241);
     position: relative;
     height: 50px;
@@ -177,6 +109,17 @@ form label {
     font-size: 1rem;
     color: black;
     transition: 0.1s ease-out;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+
+form .column {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
 }
 
 #lb1::placeholder, #lb2::placeholder {
@@ -197,21 +140,16 @@ form label {
     outline: none;
 }
 
-::-webkit-file-upload-button {
+/* ::-webkit-file-upload-button {
     color: white;
     background-color: rgb(189, 58, 100);
     padding: 10px;
-    border: none;
-    border-radius: 6px;
-    box-shadow: 1px 0 1px 1px #6b4559;
-    outline: none;
-    transition: .5s;
-    cursor: pointer;
-}
+} */
 
-::-webkit-file-upload-button:hover {
+
+/* ::-webkit-file-upload-button:hover {
     background-color: rgb(230, 92, 136);
-}
+} */
 
 /* #change {
     align-self: center;
@@ -264,15 +202,46 @@ form label {
 
 input:focus {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgb(189, 58, 100);
     transition: 0.2s ease-in;
 }
-
-/* form .column {
+/* 
+form .column {
     display: flex;
     flex-direction: row;
     column-gap: 15px;
 } */
+
+#lb3 {
+    background-color: rgb(241, 241, 241);
+    position: relative;
+    height: 50px;
+    width: 8rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    outline: none;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: rgb(78, 78, 78);
+    transition: 0.1s ease-out;
+}
+
+#msg {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 8px;
+    text-align: left;
+    padding: 1rem;
+    min-height: 10vh;
+    max-height: 25vh;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    border: 1.5px solid rgb(206, 206, 206);
+    font-size: 1rem;
+    color: black;
+    text-align: justify;
+}
 
 form #btn {
     height: 55px;
@@ -288,10 +257,12 @@ form #btn {
     background-color: rgb(189, 58, 100);
 }
 
-form #btn:hover {
+form #btn:hover, #vol:hover {
     background-color: rgb(223, 99, 138);
 }
 
 @media screen and (max-width: 500px) {
-    
-} 
+    form .column {
+        flex-wrap: wrap;
+    }
+}

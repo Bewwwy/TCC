@@ -61,7 +61,7 @@ footer {
 
 
 .f_logo {
-    /* background-color: aliceblue; */
+    filter: invert(100%);
     width: 20rem;
 }
 

@@ -19,18 +19,18 @@ function input_msg() {
     
         if (isset($_SESSION["msg_data"]["nome"])) {
             echo '<label for="nome" id="p1">Nome completo</label>
-            <input type="text" name="nome" id="ip1" placeholder="Nome completo..." value="'. $_SESSION["msg_data"]["nome"] . '">';
+            <input type="text" name="nome" id="ip1" placeholder="Nome completo..." value="'. $_SESSION["msg_data"]["nome"] . '" maxlength="50">';
         } else {
             echo '<label for="nome" id="p1">Nome completo</label>
-            <input type="text" name="nome" id="ip1" placeholder="Nome completo...">';
+            <input type="text" name="nome" id="ip1" placeholder="Nome completo..." maxlength="50">';
         }
     
         if (isset($_SESSION["msg_data"]["email"])) {
             echo '<label for="email" id="p2">Email</label>
-            <input type="email" name="email" id="p2" placeholder="Email..." value="' . $_SESSION["msg_data"]["email"] .'">';
+            <input type="email" name="email" id="p2" placeholder="Email..." value="' . $_SESSION["msg_data"]["email"] .'" maxlength="80">';
         } else {
             echo '<label for="email" id="p2">Email</label>
-            <input type="email" name="email" id="p2" placeholder="Email...">';
+            <input type="email" name="email" id="p2" placeholder="Email..." maxlength="80">';
         }
         if (isset($_SESSION["msg_data"]["msg"])) {
             echo '<label for="Descricao">Mensagem</label>
